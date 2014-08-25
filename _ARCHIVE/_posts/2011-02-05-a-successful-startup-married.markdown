@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "Successful Startup"
+description:  "Successful Startup"
+image_thumbnail_500x320: "Marriedx320.jpg"
+image_thumbnail_500x500: "Marriedx500.jpg"
+categories: [life]
+tags:  [family, marriage]
+---
+<p>
+It could be argued that finding your business partner is no different than being lucky enough to find the right
+person for you.  I can not begin to share with you, just how many failures I have had at this game, but this
+time I got it right.  In the startup of life I have made one of the best decisions I ever could have made.
+</p>
+
+<!-- more -->
+
+<p>{% img /content/Married.jpg %}</p>
+<p>A letter to our families:</p>
+
+{% blockquote %}
+Dear Family and Friends,
+
+Finding your soulmate in this world is quite a challenge.  It’s something that takes time and lots of searching. It also takes a great
+understanding of who you are, what you want in another person, and where you want to go in this world. The search comes not without
+diversions and challenges, but in the end, it is one of the most amazing things you can do in this life.
+
+Chris and Kate are very excited to announce a very happy surprise.  We decided to get married! We have been talking about getting married
+for quite sometime, and we decided not to wait. We met on February 8, 2010 in Boulder, CO, and we were married on February 5, 2011 in Queens, NY.
+
+The whole event was very New York and we did it just like you would expect. Kate is low maintenance (the opposite of a bridezilla) – she
+bought her wedding dress from Macy’s in Herald Square.  We also had our rings handcrafted by an artisan from Massachusetts. We had cake
+from Magnolia Bakery, one of the most famous bakeries in the city!  For the ceremony, we were accompanied by a non-denominational pastor
+and a witness –that’s it! We are very excited that our lives have brought us together in NYC and we hope to enjoy a few exciting years
+together as newlyweds before were expand our family.  
+
+We are lucky to have you all as supportive friends and family in just about every time zone.  Because of this, we are going to celebrate
+our marriage with you all next year, for our first wedding anniversary. We’re planning on making a few stops across the country to
+celebrate this good news.  
+
+We will be sending announcements to our close friends and family in the coming weeks with more info and pictures.  
+
+Lots of love,
+
+Chris and Kate Hough
+{% endblockquote %}
+
+<p>
+Not a day goes by when I am not thankful for have meeting {% link https://twitter.com/kathrynhough "KathrynHough" %}. I love you baby.
+</p>
+<p>Like any true Boulder hippie, I had an amazing pony tail.</p>

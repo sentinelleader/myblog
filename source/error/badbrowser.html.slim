@@ -1,0 +1,65 @@
+---
+layout: layout-error
+title: "Bad Browser"
+---
+p
+  strong
+    |Outdated Browser
+p
+  |Unfortunately I do not support the version of the browser you are using.
+p
+  |For a better web and application experience, please keep your browser up to date.
+p
+  = link_to("Please Click Here", "http://outdatedbrowser.com/")
+  |&nbsp;to upgrade.
+p
+  | In order to enjoy this website the follow requirements must be met:
+ul[class="requirements"]
+  li
+    | Javascript and Cookies&nbsp;
+    strong
+      | must be
+    | &nbsp;enabled.  These small bits of information are used to maintain your session, basically telling me if you are logged in or not.
+  li
+    | Due to security requirements, application performance, and your user experience I&nbsp;
+    strong
+      | only
+    | &nbsp;support the most current and previous versions of modern web browsers.<br/><br/>These are the current versions of browsers I support:<br/><br/>
+    ul
+      li
+        a[href="http://www.google.com/chrome" target="_blank"]
+          |Google Chrome versions &gt;=
+          = browser_google
+      li
+        a[href="http://www.firefox.com/" target="_blank"]
+          |Firefox versions &gt;=
+          = browser_firefox
+      li
+        a[href="http://www.apple.com/safari/" target="_blank"]
+          |Safari versions &gt;=
+          = browser_safari
+      li
+        a[href="http://windows.microsoft.com/ie" target="_blank"]
+          |Internet Explorer versions &gt;=
+          = browser_msft
+        br
+        br
+  li
+    | I'm sorry but unsecure and unsafe browsers will be&nbsp;
+    strong
+      | blocked
+    |.  If you're currently running a browser that needs to be upgraded, click the links below to download and install the latest version.  Newer browsers protect you better against scams, viruses, trojans, phishing and other threats. They also increase viewing speed, application performance, and give you an overall better web experience.
+p
+  | If you are interested in more browser related data check out&nbsp;
+  = link_to("Browser Statistics", "http://www.w3schools.com/browsers/browsers_stats.asp", target: "_blank")
+  |,&nbsp;
+  = link_to("Outdated Browser", "http://outdatedbrowser.com/", target: "_blank")
+  |,&nbsp;and&nbsp;
+  = link_to("Browser Happy", "http://browsehappy.com/", target: "_blank")
+  |.
+p
+  | Please correct each of these requirements to take advantage of this website.
+p
+  | Thank you,
+p
+  = site_author

@@ -1,0 +1,227 @@
+require "bundler/setup"
+require 'rake'
+require 'yaml'
+require 'fileutils'
+
+# Load the configuration file
+CONFIG = YAML.load_file("_config.yml")
+# Get and parse the date†
+DATE = Time.now.strftime("%Y-%m-%d")
+# Directories
+POSTS = "_posts"
+POST_IMGS = "_assets/posts"
+DRAFTS = "_drafts"
+STASH = "_stash"
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# rake documentation ----------------------------------------------------------------------------
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+desc 'Editorial blogging documentation.'
+task :docs do
+  verbose(false) do
+    puts "-------------------------------------------------------------------------------\n"
+    puts "*** Editorial Documentation ***\n
+    - If you are having issues running rake commands in zsh (zshell) add alias rake=\"noglob bundle exec rake\" to your ~/.zshrc file
+    "
+    puts "-------------------------------------------------------------------------------"
+  end
+end
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# rake images -----------------------------------------------------------------------------------
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+desc 'Listing of all available images for posts'
+task :images do
+  files = Dir["#{POST_IMGS}/*"]
+  verbose(false) do
+    puts "=> This is the complete list of available post images!"
+    files.each_with_index do |file, index|
+      puts "#{index + 1}: #{file}".sub("#{POST_IMGS}/", "")
+    end
+  end
+end
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# rake deploy ----------------------------------------------------------------------------------
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+desc 'Build the site in Production Mode, thatn Deploy the current site to amazon s3'
+task :deploy do
+  verbose(false) do
+    Rake::Task[:delete].invoke
+    Rake::Task[:build].invoke
+    sh %{s3_website push --headless}
+  end
+end
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# rake list tasks -------------------------------------------------------------------------------
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+desc 'List all available Rake Tasks'
+task :list do
+  verbose(false) do
+    sh %{rake -T}
+  end
+end
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# rake publish ----------------------------------------------------------------------------------
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+desc 'Move a post from drafts to posts'
+task :publish do
+  files = Dir["#{DRAFTS}/*.md"]
+  files.each_with_index do |file, index|
+    puts "#{index + 1}: #{file}".sub("#{DRAFTS}/", "")
+  end
+  print "> "
+  number = $stdin.gets
+  if number =~ /\D/
+    filename = files[number.to_i - 1].sub("#{DRAFTS}/", "")
+    FileUtils.mv("#{DRAFTS}/#{filename}", "#{POSTS}/#{DATE}-#{filename}")
+    puts "#{filename} was moved to '#{POSTS}'."
+  else
+    puts "Error! Please choose a draft by the assigned number!"
+  end
+end
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# rake create_draft["Title"] --------------------------------------------------------------------
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+desc 'Create draft with rake draft["title with spaces"] and do not include date'
+task :create_draft, :title do |t, args|
+  title = args.title
+  check_title(title)
+  filename = "#{transform_to_slug(title)}"
+  create_file(DRAFTS, filename, title)
+end
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# rake create_post["Title"] ---------------------------------------------------------------------
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+desc 'Create post with rake post["title with spaces"]'
+task :create_post, :title do |t, args|
+  title = args.title
+  check_title(title)
+  filename = "#{DATE}-#{transform_to_slug(title)}"
+  create_file(POSTS, filename, title)
+end
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# rake create_post_and_isolate["Title"] ---------------------------------------------------------
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+desc 'Create post with rake post["title with spaces"]'
+task :create_post_and_isolate, :title do |t, args|
+  title = args.title
+  check_title(title)
+  filename = "#{DATE}-#{transform_to_slug(title)}"
+  create_file(POSTS, filename, title)
+  Rake::Task[:isolate].invoke(filename)
+end
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# rake development ------------------------------------------------------------------------------
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+desc 'Startup server locally to begin working on the site'
+task :development do
+  verbose(false) do
+    Rake::Task[:delete].invoke
+    puts "=> Turn up Guard to Work on the Site"
+    sh %{bundle exec guard -i}
+  end
+end
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# rake production -------------------------------------------------------------------------------
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+desc 'Startup server running locally with every production gem'
+task :production do
+  verbose(false) do
+    Rake::Task[:delete].invoke
+    puts "=> Setup Production Version of the Site Minified!"
+    sh %{JEKYLL_ENV=production bundle exec jekyll server --config config/application.yml,config/production.yml}
+  end
+end
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# rake build ------------------------------------------------------------------------------------
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+desc 'Build site for production, however the site will not be deployed'
+task :build do
+  verbose(false) do
+    Rake::Task[:delete].invoke
+    puts "=> Setup Production Site Build"
+    sh %{JEKYLL_ENV=production bundle exec jekyll build --config config/application.yml,config/production.yml}
+  end
+end
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# rake delete -----------------------------------------------------------------------------------
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+desc 'Delete the current local _site folder'
+task :delete do
+  verbose(false) do
+    puts "=> Deleting the Current Site"
+    Rake::Task[:clean].invoke
+    FileUtils.rm_rf("_site", secure: true)
+  end
+end
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# rake isolate ----------------------------------------------------------------------------------
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+desc "Stash everything to a temporary stash location (stash) so regenerating the site happens much more quickly."
+task :stash do
+  FileUtils.mv 'index.slim', STASH
+  Dir.glob("#{POSTS}/*.*") do |post|
+    FileUtils.mv post, STASH
+  end
+end
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# rake isolate[my-post] -------------------------------------------------------------------------
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+desc "Move all other posts than the one currently being worked on to a temporary stash location (stash) so regenerating the site happens much more quickly."
+task :isolate, :filename do |t, args|
+  Dir.glob("#{POSTS}/*.*") do |post|
+    FileUtils.mv post, STASH unless post.include?(args.filename)
+  end
+end
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# rake integrate --------------------------------------------------------------------------------
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+desc "Move all stashed posts back into the posts directory, ready for site generation."
+task :integrate do
+  FileUtils.mv Dir.glob("#{STASH}/index.slim"), "./"
+  FileUtils.mv Dir.glob("#{STASH}/*.*"), "#{POSTS}/"
+end
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# rake clean ------------------------------------------------------------------------------------
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+desc "Clean out caches"
+task :clean do
+  rm_rf [".pygments-cache", ".gist-cache", ".sass-cache", ".instagram-cache", "source/stylesheets/screen.css"]
+end
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Create the file with the slug -----------------------------------------------------------------
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+def create_file(directory, filename, title)
+  filename = "#{directory}/#{filename}"
+  if File.exists?(filename)
+    abort("ERROR! The file already exists!")
+  else
+    puts "Creating the post: #{filename}"
+    open(filename, 'w') do |post|
+      post.puts "---"
+      post.puts "layout: post"
+      post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
+      post.puts "description: \"#{title.gsub(/&/,'&amp;')}\""
+      post.puts "image_thumbnail_500x320: "
+      post.puts "image_thumbnail_500x500: "
+      post.puts "tags: []"
+      post.puts "categories: [life, startups, rants, code]"
+      post.puts "---"
+    end
+  end
+end
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Transform the filename and date to a slug -----------------------------------------------------
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+def transform_to_slug(title)
+  characters = /("|'|!|\?|:|\s\z)/
+  whitespace = /\s/
+  "#{title.gsub(characters,"").gsub(whitespace,"-").downcase}.md"
+end
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Verify title ----------------------------------------------------------------------------------
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+def check_title(title)
+  if title.nil? or title.empty?
+    abort("ERROR! Please add a title to your file!")
+  end
+end

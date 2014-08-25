@@ -1,0 +1,19 @@
+| {% slim V2/header/wrapper.slim %}
+/ CANVAS
+div[class="l-canvas type_wide col_contside headerpos_fixed headertype_extended"]
+  div[class="l-canvas-h"]
+    | {% slim V2/header/navigation.slim %}
+    / MAIN
+    div[class="l-main"]
+      div[class="l-main-h"]
+        / -----------------------------------------------------------------------------------------------
+        div[class="l-submain"]
+          div[class="l-submain-h g-html i-cf"]
+            div[class="g-cols"]
+              div[class="full-width align_center"]
+                |<img src="{% asset_path error.png %}" alt="Error!"/>
+              div[class="full-width align_center"]
+                h3
+                  |{{content}}
+/ -----------------------------------------------------------------------------------------------
+| {% slim V2/footer/wrapper.slim %}

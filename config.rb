@@ -25,3 +25,18 @@ activate :deploy do |deploy|
   deploy.method       = :git
   deploy.branch       = 'gh-pages'
 end
+
+
+# Globla Variables
+set :site_title, 'NoConformity'
+set :site_author, 'Chris Hough'
+set :site_description, 'This is the personal blog of Chris Hough. My thoughts and feelings are my own! If you have opinions for my opinions reach out to me, but make sure you read my disclaimer first.'
+set :site_slogan, 'A free spirited, sex positive, polish internet brick laying capitalist.'
+
+set :browser_msft, '10'
+set :browser_google, '32'
+set :browser_firefox, '26'
+set :browser_safari, '6'
+
+set :google_analytics, 'UA-37324451-1'
+set :google_analytics_site, 'noconformity.com'

@@ -1,0 +1,36 @@
+---
+layout: post
+title: "My 2013 Goals"
+image_thumbnail_500x320: "2013Goalsx320.JPG"
+image_thumbnail_500x500: "2013Goalsx500.JPG"
+categories: [life]
+tags: [goals]
+---  
+<p>I know everyone puts a spin on their own goals for the year, but while I have set goals, this is my first attempt at publicly locking them in.  Since leaving
+Chicago, I have endured a huge amount of transformation, not all by choice.  At the end of the day, I believe I am where I am supposed to be right now more so
+than ever before.  I have grown to love the roller coaster of life and I have not looked back.  Every footstep out and away from my home town has been both an adventure
+and very rewarding. As a geek and huge fan boy, I must admit this quote means a lot to me.</p>
+<!-- more -->
+{% blockquote Steve Jobs, Apple Computers %}
+Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma — which is living with the results of other people's thinking.
+Don't let the noise of others' opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition.
+They somehow already know what you truly want to become. Everything else is secondary.
+{% endblockquote %}
+
+<p>So as I begin to embark on the journey of 2013, I have the following on my mind. #Planned</p>
+
+<ul>
+	<li>Drop 30 pounds.  I am sick of looking like a fat ass, and this extra weight is slowing me down.</li>
+	<li>Run in at least two races this summer.</li>
+	<li>Maintain on average 3-4 days of CrossFit each week.</li>
+	<li>Become PROFICIENT at Ruby, the Rails Framework, and Postgres.</li>
+	<li>Launch my startup's first product line.</li>
+	<li>Pay off our family credit card and fix a few more debt related issues from the back in the day.</li>
+	<li>Hit the publish key at least once a week.</li>
+	<li>Learn to breathe and get back into yoga regularly for my spirituality.</li>
+	<li>Publish at least one open source project.</li>
+	<li>Finish my Coldbox conversion and complete overhaul project at my day gig.</li>
+	<li>Practice listening first, no matter how frustrating the other person may be.  We can not force others to awaken.</li>
+</ul>
+
+<p>I believe in constant learning, and as long as I pick up something new each and every day I believe I will end up where my dream wants to take me.</p>

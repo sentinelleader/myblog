@@ -1,0 +1,212 @@
+#timeline {
+//-----------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------
+	margin: 0px auto;
+	max-width: 1000px;
+	overflow: hidden;
+	height: auto;
+	position: relative;
+	padding: 0px;
+	list-style-type: none;
+	background-image: url(asset_path('20140413-Vertical-Line.png'));
+	background-repeat: repeat-y;
+	background-position: 50% 0;
+
+	.year {
+		background: $app-color-black;
+		font-size: 1em;
+		line-height: 4;
+		color: $app-color-white;
+		width: 5em;
+		margin: 1em auto;
+		text-align: center;
+		font-weight: bolder;
+		border-radius: 50%;
+		margin-top: 0;
+		margin-bottom: 0;
+		clear: both;
+	}
+	.year:first-of-type {
+		margin-top: 0;
+	}
+	.event > p {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-size: 1em;
+	}
+	.event {
+		line-height: 1em;
+		font-size: 1em;
+		position: relative;
+		text-align: left;
+		float: right;
+		clear: right;
+		width: 45%;
+		margin: 10px 2.5%;
+		border-radius: 5px;
+		list-style-type: none;
+		display: block;
+		padding-top: 0.5em;
+		padding-right: 1.5em;
+		padding-left: 1.5em;
+		padding-bottom: 2em;
+		background: white;
+		z-index: 15;
+		color: $app-color-black;
+		border: 2px solid $app-color-black;
+		text-decoration: none;
+		-webkit-transition: background .15s linear;
+		-moz-transition: background .15s linear;
+		-ms-transition: background .15s linear;
+		-o-transition: background .15s linear;
+		transition: background .15s linear;
+		p {
+			margin-top: 5px;
+			margin-bottom: 5px;
+			font-size: 1em;
+		}
+	}
+	.event .position, .event .education {
+		margin-top: 0px;
+		margin-bottom: 7px;
+		font-size: 1em;
+		line-height: 1em;
+		font-weight: bold;
+	}
+	.event .location, .event .month{
+		color: $app-color-light-grey;
+		font-size: 1em;
+	}
+	.event .month,.event .location.event .education, .contacts .social .social-icons a {
+		margin-bottom: 7px;
+		line-height: 1em;
+	}
+	.event.featured {
+		width: 95%;
+		background: $app-color-white;
+	}
+	.event.featured:after, .event.featured:before {
+		display: none;
+	}
+	@media all and (max-width: 600px) {
+		.event {
+			width: 85%;
+		}
+	}
+	.event.offset-first {
+		margin-top: -1.5em;
+	}
+	.event img {
+		margin-top: 10px;
+		max-width: 100%;
+	}
+	.event:hover {
+		background: $app-color-white;
+	}
+	.event:hover:after {
+		background: $app-color-black;
+	}
+	.event:nth-child(2n) {
+		float: left;
+		clear: left;
+	}
+	@media all and (min-width: 600px) {
+		.event:nth-child(2n) {
+			margin-top: 20px;
+		}
+	}
+	@media all and (min-width: 650px) {
+		.event:after {
+			display: block;
+			content: ' ';
+			height: 9px;
+			width: 9px;
+			background: $app-color-white;
+			border-radius: 50%;
+			position: absolute;
+			left: -5%;
+			top: 1.5em;
+			border: 2px solid white;
+		}
+	}
+	.event:nth-child(2n):after {
+		right: -5%;
+		left: auto;
+	}
+	@media (min-width: 992px) {
+		.timeline .year {
+			margin-bottom: 30px;
+		}
+	}
+	.month {
+		display: block;
+		margin-bottom: 15px;
+		color: $app-color-white;
+		font-size: 0.9em;
+	}
+	.month .icon {
+		margin-right: 5px;
+	}
+	.event {
+		width: 100%;
+		background: $app-color-white;
+		border-color: $app-color-black;
+		text-align: left;
+		margin: 50px 0;
+		color: $app-color-black;
+	}
+	@media (min-width: 992px) {
+		.event {
+			width: 45%;
+			margin: 110px 2.5% 50px 2.5%;
+		}
+	}
+	.event:hover {
+		background: $app-color-white;
+	}
+	.event:hover:after {
+		background: $app-color-black;
+	}
+	.event:after {
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		-ms-border-radius: 0;
+		-o-border-radius: 0;
+		border-radius: 0;
+		width: 15px;
+		height: 3px;
+		border-color: $app-color-black;
+		border-width: 3px;
+		background: $app-color-white;
+		top: 1.8em;
+		left: -29px;
+	}
+	@media (min-width: 600px) {
+		.event:nth-child(2n) {
+			margin-top: 50px;
+		}
+	}
+	.event:nth-child(2n):after {
+		right: -31px;
+	}
+	.heading {
+		color: $app-color-black;
+		font-weight: 700;
+		font-size: 1.2em;
+		text-align: left;
+		margin-bottom: 0;
+	}
+	.event .position .fa-wrench, .event .position .fa-calendar, .event .education .fa-book, .event .position .fa-map-marker {
+		margin-right: 5px;
+		padding: 0px;
+	}
+	.fa-calendar, .fa-tags, .fa-folder, .fa-book, .social .sub-heading, .entry-meta-rss .fa {
+		padding-right: 5px;
+	}
+	.fa-map-marker {
+		padding-right: 10px;
+	}
+//-----------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------
+}

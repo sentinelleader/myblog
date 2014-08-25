@@ -1,0 +1,225 @@
+div[class="g-cols"]
+	div[class="full-width"]
+		h1[class="align_center"]
+			|Resume
+/ -----------------------------------------------------------------------------------------------
+div[class="g-cols"]
+	div[class="full-width"]
+		ul[id="timeline"]
+			li[class="year"]
+				|{{ site.time | date: '%Y' }}
+			/ -----------------------------------------------------------------------------------------------
+			li[class="event"]
+				h3[class="heading"]
+					|{% link http://www.placewise.com "PlaceWise Media" %}
+				h4[class="position"]
+					i[class="fa fa-wrench"]
+					|Director of Application Engineering
+				span[class="month"]
+					i[class="fa fa-calendar"]
+					|April 2014 - Present
+				span[class="location"]
+					i[class="fa fa-map-marker"]
+					|Portland, Oregon
+				p
+					|Supervise a team of three remotely to role out our enterprise wide service orientated architecture.  As of today we are supporting 8 separate Ruby on Rails 4.0 APIs running on Ruby 2.0 hosted in the cloud via ProfitBricks.  Currently v1/v2 are operating on a SQL Server 2012 database, but we are migrating the entire family of services to Postgres.  These APIs adhere to semantic versioning and we are working to achieve maximum testing coverage with rspec.
+				p
+					|Drive performance and process improvements through 30/60/90 day reviews, assist with training, and skill improvements via our competitive codeschool team account.  Recently turned up Slack to curb email clutter and improve water cooler communications.  I am also regularly encouraging each team member to submit CFPs to their favorite conferences.
+				p
+					|Regularly host architecture discussions involving all members of our technology team to help strengthen our current platform and drive future changes as a team instead of silos.
+				|<figure>
+				|	<a href="https://www.ruby-lang.org" target="_blank"><img src="{% asset_path ruby.png %}" alt="Ruby"/></a>
+				|	<a href="http://www.postgresql.org/" target="_blank"><img src="{% asset_path postgres.png %}" alt="Postgres"/></a>
+				|	<a href="https://github.com/" target="_blank"><img src="{% asset_path git.png %}" alt="Git"/></a>
+				|	<a href="http://lucene.apache.org/solr/" target="_blank"><img src="{% asset_path solr.png %}" alt="Solr"/></a>
+				|	<a href="http://www.microsoft.com/en-us/sqlserver/" target="_blank"><img src="{% asset_path sqlserver.png %}" alt="MSFT Sql Server"/></a>
+				|	<a href="http://jquery.com/" target="_blank"><img src="{% asset_path jquery.png %}" alt="jQuery"/></a>
+				|	<a href="http://www.apple.com/" target="_blank"><img src="{% asset_path apple.png %}" alt="Apple"/></a>
+				|	<a href="https://atom.io/" target="_blank"><img src="{% asset_path atom.ico %}" alt="Atom"/></a>
+				|</figure>
+			/ -----------------------------------------------------------------------------------------------
+			li[class="event"]
+				h3[class="heading"]
+					|{% link http://www.placewise.com "PlaceWise Media" %}
+				h4[class="position"]
+					i[class="fa fa-wrench"]
+					|Web Applications Engineer
+				span[class="month"]
+					i[class="fa fa-calendar"]
+					|August 2009 - April 2014
+				span[class="location"]
+					i[class="fa fa-map-marker"]
+					|Portland, Oregon
+				p
+					|Through the help and management of an external ruby senior consultant we were able to redevelop a set of key v1 APIs previously haphazardly written in a hacked combination of ColdFusion and Python Django frameworks. This project originally covered six new services written in ruby 2 rails 4.0 and migrated the entire setup from leased hardware to the cloud.
+				p
+					|Assisted with released management and software deployment process controls revamping the way the entire organization deploys code to the enterprise with an emphasis on TDD.
+				p
+					|Converted the entire enterprise from Subversion to Git.
+				p
+					|Re-architected the Retailhub content management application using the Coldbox ColdFusion MVC framework.  This software has multiple access tiers utilized by both internal and external clients to crud content, manage events and deals, and essentially act as the controller silo for each of our data points. Recent enhancements included multiple dashboards for our marketing team to rapidly create and manage deal data.
+				|	<a href="https://www.ruby-lang.org" target="_blank"><img src="{% asset_path ruby.png %}" alt="Ruby"/></a>
+				|	<a href="http://aws.amazon.com/" target="_blank"><img src="{% asset_path aws.png %}" alt="Amazon Web Services"/></a>
+				|	<a href="https://www.heroku.com/" target="_blank"><img src="{% asset_path heroku.png %}" alt="Heroku"/></a>
+				|	<a href="https://github.com/" target="_blank"><img src="{% asset_path git.png %}" alt="Git"/></a>
+				|	<a href="http://lucene.apache.org/solr/" target="_blank"><img src="{% asset_path solr.png %}" alt="Solr"/></a>
+				|	<a href="http://www.microsoft.com/en-us/sqlserver/" target="_blank"><img src="{% asset_path sqlserver.png %}" alt="MSFT Sql Server"/></a>
+				|	<a href="http://www.adobe.com/products/coldfusion/" target="_blank"><img src="{% asset_path coldfusion.png %}" alt="Adobe ColdFusion"/></a>
+				|	<a href="http://www.coldbox.org/" target="_blank"><img src="{% asset_path coldbox.png %}" alt="Coldbox ColdFusion Framework"/></a>
+				|	<a href="http://jquery.com/" target="_blank"><img src="{% asset_path jquery.png %}" alt="jQuery"/></a>
+				|	<a href="http://www.apple.com/" target="_blank"><img src="{% asset_path apple.png %}" alt="Apple"/></a>
+				|	<a href="http://www.microsoft.com/" target="_blank"><img src="{% asset_path msft.png %}" alt="Microsoft"/></a>
+				|	<a href="https://atom.io/" target="_blank"><img src="{% asset_path atom.ico %}" alt="Atom"/></a>
+				|</figure>
+			/ -----------------------------------------------------------------------------------------------
+			li[class="event"]
+				h3[class="heading"]
+					|<a href="javascript: scroll_to('projects');" target="_blank">Huedio Corporation</a>
+				h4[class="position"]
+					i[class="fa fa-wrench"]
+					|Co-Founder &amp; CEO
+				span[class="month"]
+					i[class="fa fa-calendar"]
+					|August 2012 – Present
+				span[class="location"]
+					i[class="fa fa-map-marker"]
+					|Portland, Oregon
+				p
+					|Lustocracy POV Editorial developed entirely via cutup html and css through Jekyllrb.  The entire website is statically generated, compressed via Jekyll assets, and published to Amazon S3.  In house editors compile posts in native html working directly in git and use rake tasks to manipulate publishing.  Scalability is not an issue here with no database or direct web server involved.
+				p
+					|Host weekly podcasts interviewing various members of the industry, cover current weekly news, and target customer feedback and conversions.
+				p
+					|Lustocracy Platform is currently being developed with an emberjs frontend built with the ember cli project hosted statically on aws, and it’s coupled to an ruby on rails api backend hosted on heroku.
+				|<figure>
+				|	<a href="https://www.ruby-lang.org" target="_blank"><img src="{% asset_path ruby.png %}" alt="Ruby"/></a>
+				|	<a href="http://aws.amazon.com/" target="_blank"><img src="{% asset_path aws.png %}" alt="Amazon Web Services"/></a>
+				|	<a href="https://www.heroku.com/" target="_blank"><img src="{% asset_path heroku.png %}" alt="Heroku"/></a>
+				|	<a href="https://github.com/" target="_blank"><img src="{% asset_path git.png %}" alt="Git"/></a>
+				|	<a href="http://www.postgresql.org/" target="_blank"><img src="{% asset_path postgres.png %}" alt="Postgres"/></a>
+				|	<a href="http://foundation.zurb.com/" target="_blank"><img src="{% asset_path zurbfoundation.png %}" alt="Zurb Foundation"/></a>
+				|	<a href="http://emberjs.com/" target="_blank"><img src="{% asset_path emberjs.png %}" alt="Emberjs"/></a>
+				|	<a href="http://jekyllrb.com/" target="_blank"><img src="{% asset_path jekyll.png %}" alt="Jekyll"/></a>
+				|	<a href="http://jquery.com/" target="_blank"><img src="{% asset_path jquery.png %}" alt="jQuery"/></a>
+				|	<a href="http://www.apple.com/" target="_blank"><img src="{% asset_path apple.png %}" alt="Apple"/></a>
+				|	<a href="https://atom.io/" target="_blank"><img src="{% asset_path atom.ico %}" alt="Atom"/></a>
+				|</figure>
+			/ -----------------------------------------------------------------------------------------------
+			li[class="event"]
+				h3[class="heading"]
+					|{% link http://www.scps.nyu.edu/ "NYU" %}
+				h4[class="education"]
+					i[class="fa fa-book"]
+					|Ruby on Rails Programming Course
+				span[class="month"]
+					i[class="fa fa-calendar"]
+					|Completed 2012
+				span[class="location"]
+					i[class="fa fa-map-marker"]
+					|New York, New York
+				|<figure>
+				|	<a href="https://www.ruby-lang.org" target="_blank"><img src="{% asset_path ruby.png %}" alt="Ruby"/></a>
+				|	<a href="https://www.heroku.com/" target="_blank"><img src="{% asset_path heroku.png %}" alt="Heroku"/></a>
+				|	<a href="https://github.com/" target="_blank"><img src="{% asset_path git.png %}" alt="Git"/></a>
+				|	<a href="http://jquery.com/" target="_blank"><img src="{% asset_path jquery.png %}" alt="jQuery"/></a>
+				|	<a href="http://www.apple.com/" target="_blank"><img src="{% asset_path apple.png %}" alt="Apple"/></a>
+				|</figure>
+			/ -----------------------------------------------------------------------------------------------
+			li[class="year"]
+				|2009
+			li[class="event"]
+				h3[class="heading"]
+					|{% link https://www.som.com/ "Skidmore Owings and Merrill LLP" %}
+				h4[class="position"]
+					i[class="fa fa-wrench"]
+					|Applications Developer
+				span[class="month"]
+					i[class="fa fa-calendar"]
+					|January 2008 – March 2009
+				span[class="location"]
+					i[class="fa fa-map-marker"]
+					|Chicago, Illinois
+				p
+					|Back-end developer supporting in house architectural project management systems written in a combination of coldfusion, ext js, asp.net, and sql server databases.
+				p
+					|Utilized the oss coldfusion cfmbb forums available on www.riaforge.com to architect the “som forums” to be used as a qa multi-tiered application supporting project managers across the enterprise.
+				|<figure>
+				|	<a href="http://www.adobe.com/products/coldfusion/" target="_blank"><img src="{% asset_path coldfusion.png %}" alt="Adobe ColdFusion"/></a>
+				|	<a href="http://www.microsoft.com/en-us/sqlserver/" target="_blank"><img src="{% asset_path sqlserver.png %}" alt="MSFT Sql Server"/></a>
+				|	<a href="http://jquery.com/" target="_blank"><img src="{% asset_path jquery.png %}" alt="jQuery"/></a>
+				|	<a href="http://www.fusebox.org/" target="_blank"><img src="{% asset_path fusebox.png %}" alt="Fusebox"/></a>
+				|	<a href="http://www.apple.com/" target="_blank"><img src="{% asset_path apple.png %}" alt="Apple"/></a>
+				|	<a href="http://www.microsoft.com/" target="_blank"><img src="{% asset_path msft.png %}" alt="Microsoft"/></a>
+				|</figure>
+			/ -----------------------------------------------------------------------------------------------
+			li[class="year"]
+				|2007
+			li[class="event"]
+				h3[class="heading"]
+					|{% link http://www.scs.northwestern.edu/ "Northwestern University" %}
+				h4[class="education"]
+					i[class="fa fa-book"]
+					|Economics of Trading Course
+				span[class="month"]
+					i[class="fa fa-calendar"]
+					|Completed 2007
+				span[class="location"]
+					i[class="fa fa-map-marker"]
+					|Chicago, Illinois
+			/ -----------------------------------------------------------------------------------------------
+			li[class="event"]
+				h3[class="heading"]
+					|{% link https://www.att.com "AT&T" %}
+				h4[class="position"]
+					i[class="fa fa-wrench"]
+					|Team Leader – Web Technology
+				span[class="month"]
+					i[class="fa fa-calendar"]
+					|August 2001 – September 2007
+				span[class="location"]
+					i[class="fa fa-map-marker"]
+					|Chicago, Illinois
+				p
+					|Provided project leadership to five coldfusion developers across the following topics: ui ux, cost estimates, client timetables, ranking priorities, status reporting, client and project team coordination, training, and participating in annual performance reviews.
+				p
+					|Lead engineer and 13 state representative for the manager’s one stop tool, MOST. This extensive dashboard application utilized push and pull mechanisms that published live productivity measurements to over 10,000 management and non-management employees. Productivity improvements, costs reductions, and increased overall performance management at all levels of the organization were directly linked to this product. At its peak configuration the database datafile had surpassed eighty gigabytes and consumed data from over sixty dts packages extracting data from mainframes to excel spreadsheets.
+				p
+					|Designed and developed the customer service bureau (csb) and network dispatch center (ndc) online handbook and back-end administrative systems. Utilized by more than 1500 employees, this software standardized process delivery, reduced costs, and minimized overall call time saving the company money while increasing customer service.
+				p
+					|Designed and developed the eknowledgenow online learning management system used by trainers to schedule, track, and administer online courses for over 1000 non-management employees in the customer service bureau organization. Faster delivery of corporate training content yielded reduced call times, and increased employee and customer satisfaction.
+				p
+					|Creator of the business and residence revenue always grows with service, BRRAGS application that housed customer driven evaluation data that analysts reviewed and classified to determine where to target performance management of employees or correct existing processes that may not be working up to expectations. Data collected was used to improve customer evaluation scores, yielding better overall customer service.
+				|<figure>
+				|	<a href="http://www.adobe.com/products/coldfusion/" target="_blank"><img src="{% asset_path coldfusion.png %}" alt="Adobe ColdFusion"/></a>
+				|	<a href="http://www.microsoft.com/en-us/sqlserver/" target="_blank"><img src="{% asset_path sqlserver.png %}" alt="MSFT Sql Server"/></a>
+				|	<a href="http://www.fusebox.org/" target="_blank"><img src="{% asset_path fusebox.png %}" alt="Fusebox"/></a>
+				|	<a href="http://www.oracle.com/" target="_blank"><img src="{% asset_path oracle.png %}" alt="Oracle"/></a>
+				|	<a href="http://www.microsoft.com/" target="_blank"><img src="{% asset_path msft.png %}" alt="Microsoft"/></a>
+				|</figure>
+			/ -----------------------------------------------------------------------------------------------
+			li[class="event"]
+				h3[class="heading"]
+					|{% link http://www.keller.edu/ "Keller Graduate School of Management" %}
+				h4[class="education"]
+					i[class="fa fa-book"]
+					|Master of Business Administration
+				span[class="month"]
+					i[class="fa fa-calendar"]
+					|Graduated 2005
+				span[class="location"]
+					i[class="fa fa-map-marker"]
+					|Chicago, Illinois
+			/ -----------------------------------------------------------------------------------------------
+			li[class="year"]
+				|2001
+			li[class="event"]
+				h3[class="heading"]
+					|{% link http://www.ic.edu/ "Illinois College" %}
+				h4[class="education"]
+					i[class="fa fa-book"]
+					|B.S. in Management Information System
+				span[class="month"]
+					i[class="fa fa-calendar"]
+					|Graduated 2001
+				span[class="location"]
+					i[class="fa fa-map-marker"]
+					|Jacksonville, Illinois

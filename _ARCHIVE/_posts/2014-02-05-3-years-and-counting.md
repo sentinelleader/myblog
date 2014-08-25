@@ -1,0 +1,28 @@
+---
+layout: post
+title: "3 years and counting"
+image_thumbnail_500x320: "HoughsNYCx320.jpg"
+image_thumbnail_500x500: "HoughsNYCx500.jpg"
+categories: [life]
+tags: [love, family]
+---
+
+<p>
+Cracking a jolly smile I walked into a pre-party for Ignite Boulder to meet up with close friends before the show.  One of my best friends introduced me to her friend named Kate. I was immediately struck with awe, but I had to muster up a solid conversation.  This was difficult at the time because I had already went to a pre-party before the pre-party! If you know Boulder, this is pretty easy to do.  Considering she was very new to town we started talking all things Boulder and soon we landed on the topic of cruiser bikes.  One of my friends at the time told me that any woman who would jump on the pegs on the back of a cruiser is a keeper.  I am usually not one for lines, but I had to drop it.  It sounded perfect for the situation.  I thought to myself, now is my chance, so I mentioned I wanted to get a california crusier and how cool it would be if she road on the back.  She laughed and was like “that would be sooo awesome!” To say the least I was immediately hooked.  We enjoyed a few more beers and exchanged twitter handles and went on our separate paths and nightly parties.  I did not want it to be over...
+</p>
+
+<!-- more -->
+<p>{% img right /content/HoughsNYC.jpg %}</p>
+
+<p>
+That week I kept a close eye on twitter.  I knew she lived in Denver and that was honestly just too far away for a relationship to work.  Lucky for me she did come up to B-town regularly.  That following week, I woke up, and immediately grabbed my iphone to check the interwebs.  To my surprise, the lovely woman I was enamored with was hanging out at The Cup coffee shop.  It was just down the street from my crib on Pearl street.  I was like “oh damn, get your ass up, now is your chance!”  I immediately jumped out of bed, got dressed and road my bike down to get coffee.  As I approached the open garage door I noticed this fine pretty lady sitting just inside to the right.  My palms were sweaty and to say I was nervous, that would be an understatement.  I was freaking out.  So I walked around to the side door carefully, like a cat, so she wouldn’t see me and made my way to the bathroom in the back.  As I starred in the mirror I knew I had but one chance to start and hopefully finish this interaction.  Failure was not an option.  I literally cupped up a pool  of water splashed it on my face and looked deeply into the mirror.  While I will keep most of what I said to me, I will sum it up by saying “Chris you are a bad ass, you can do this! It’s go time.” I felt like a middle line backer on the home team running onto the field at the homecoming game.  I walked out of the bathroom, purchased a coffee and gracefully approached the lady I spent so much time laughing with at Ignite.  I looked at her and said: “Hey! Funny seeing you here?”  We started talking.  That single conversation lasted nearly 4 hours.  I didn’t want it to end....
+</p>
+<p>
+It didn’t....
+</p>
+<p>
+3 years later, I am happier than I have ever been.  I feel like I have met the most powerful passionate success driven woman on the planet.  She inspires me, she pushes me to succeed, and she makes my heart smile no matter how hard I am on myself.  She taught how life could be an adventurous roller coaster ride if you're wiling to take your hands off the grips and hold them as high as possible.  I will be forever grateful for meeting my wife, my partner in crime, until my final breath.
+</p>
+<p>
+Kathryn, I love you. I will always be by your side, and will work my hardest to work with you to build that rocket ship to the moon.
+</p>

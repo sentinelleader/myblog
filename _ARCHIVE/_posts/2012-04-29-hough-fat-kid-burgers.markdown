@@ -1,0 +1,27 @@
+---
+layout: post
+title: "Hough Fat Kid Burgers"
+image_thumbnail_500x320: "hough-fat-kid-burgersx320.jpg"
+image_thumbnail_500x500: "hough-fat-kid-burgersx500.jpg"
+categories: [life]
+tags: [recipe]
+---  
+<p>If you&rsquo;re looking for an outstanding &ldquo;FAT KID&rdquo; burger recipe this summer, look no further. I was hesitant to share this family secret but I am curious as to what others could do building off of it.&nbsp; This recipe makes close to 20 1lb burgers depending on how big you make each one. &nbsp;</p>
+<!-- more -->
+<p>{% img right /content/hough-fat-kid-burgers.jpg %}</p>
+<ul>
+<li>7 lbs of 85% lean burger meat.&nbsp; Trust me you need the fat, do not get the extra lean kind.</li>
+<li>4 spicy italian pork sausages.&nbsp;</li>
+<li>3 diced jalape&ntilde;os.</li>
+<li>1 diced red onion.</li>
+<li>3/4 stick of Irish Gold garlic herb butter.</li>
+<li>Plenty of garlic powder, and if you have fresh cut cloves toss them in too.</li>
+<li>A few pinches of sea salt.</li>
+<li>Plenty of ground pepper.</li>
+<li>4 free range eggs.</li>
+<li>Shredded jalape&ntilde;o jack cheese, the more the merrier. &nbsp;</li>
+<li>20oz can of Guinness.&nbsp;</li>
+</ul>
+<p>Mix all of that together until it&rsquo;s a consistent near solid sticky bowl of meat, than start making patties.&nbsp; Each of the burgers weighs in around 1lb or around the size of a fist. Lay each patty on a cookie sheet covered with tin foil and cover each of them with a thin layer of italian bread crumbs. Now you&rsquo;re ready for the grill.&nbsp; Depending on how well you like your burgers cooked, I usually keep them on the grill for a total of 6-8 minutes, flipping them for 3-4 minutes on each side.&nbsp; Add 2 additional slices of jalape&ntilde;o jack cheese on the second flip to kick it up a notch.&nbsp; &nbsp;</p>
+<p>Pairs well with Guinness! &nbsp;</p>
+<p>Hope you enjoy this recipe! If you take a stab at it or modify it, let me know how it goes.</p>

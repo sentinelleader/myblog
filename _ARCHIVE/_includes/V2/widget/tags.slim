@@ -1,0 +1,18 @@
+|{% capture site_tag_count %}{{ site.tags | size }}{% endcapture %}
+|{% if site_tag_count != '0' %}
+|<div class="widget">
+|	<h4>Tags</h4>
+|	<div class="w-tags layout_block">
+|		<div class="w-tags-h">
+|			<div class="w-tags-list">
+|				{% for tag in site.tags %}
+|					<div class="w-tags-item">
+|						<a class="w-tags-item-link force-capitalize" href="{% tag_url {{ tag[0] }} %}">{{ tag[0] }}</a>
+|						<span class="w-tags-item-separator">,</span>
+|					</div>
+|				{% endfor %}
+|			</div>
+|		</div>
+|	</div>
+|</div>
+|{% endif %}

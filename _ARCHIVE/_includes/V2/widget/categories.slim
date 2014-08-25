@@ -1,0 +1,19 @@
+|{% capture site_category_count %}{{ site.categories | size }}{% endcapture %}
+|{% if site_category_count != '0' %}
+|<div class="widget">
+|	<h4>Categories</h4>
+|	<div class="w-links">
+|		<div class="w-links-h">
+|			<div class="w-links-list">
+|				{% for category in site.categories %}
+|					<div class="w-links-item">
+|						<a class="w-links-anchor" href="{% category_url {{ category[0] }} %}">
+|							<span class="w-links-anchor-title force-capitalize">{{ category[0] }}</span>
+|						</a>
+|					</div>
+|				{% endfor %}
+|			</div>
+|		</div>
+|	</div>
+|</div>
+|{% endif %}

@@ -1,0 +1,98 @@
+---
+layout: post
+title: "Diving into the Deep End with Ruby"
+image_thumbnail_500x320: "Learningx320.jpg"
+image_thumbnail_500x500: "Learningx500.jpg"
+categories: [life]
+tags: [ruby, learn-to-code]
+---
+<p>
+Two years ago I started heading down the path of learning Ruby.  While I have been coding for a while now, I desperately wanted to get out of working in the ColdFusion language.
+Shocking right, ColdFusion is still a thing.  I would consider ColdFusion and PHP about the same b.s. and anyone who argues that one is better than the other is basically
+debating the same sets of points on why ColdFusion  is better than PHP or vice versa.  They are merely using different colored markers to do so.  In my opinion
+ColdFusion will be the cobol of my generation. I knew that before I woke up one day obsolete, I had to make a change.
+</p>
+
+<!-- more -->
+<p>{% img right /content/Learning.jpg %}</p>
+
+<p>
+We all know there is a shortage of programmers right now, especially in the Ruby community.  Whether you are making the leap fresh, or you’re working to transition to
+modern technology, I hope these tips help you on that journey of discovery.  Let me start by saying, I am no expert in the language.  I believe in constant
+learning, and working with others to help build and realize their dreams.  My wife Kathryn Hough and I are building our startup in Ruby on Rails, and she is
+about to dive into the deep end with a formal code school {% link http://www.epicodus.com/ "epicodus" %} on February 17th.
+</p>
+<p>
+<strong>Why did I pick ruby?</strong>
+</p>
+<p>
+After many conversations with members of the community, I came to agree with many of the core philosophies of the Ruby language.  In python there is often one prescribed way that people do things
+and everyone subscribes to that methodology. "Ruby inherited the Perl philosophy of having more than one way to do the same thing[{% link http://blog.simonwillison.net/post/58096277134/philosophyofruby "Quote" %}]".  I correlated that reference with many of my
+friends running startups who were also using Ruby, and I loved the overall beauty of the language. Matsumoto, the founder of Ruby, has said that “Ruby is designed for programmer
+productivity and fun, following the principles of good user interface design. He stresses that systems design needs to emphasize human, rather than computer needs.[{% link http://en.wikipedia.org/wiki/Ruby_(programming_language) "Quote" %}]”  Anyone who
+touches the language for the first time feels this in my opinion.  I was hooked from day one.
+</p>
+<p>
+If you have been playing around with the thought of learning to code, or learning a new language I would encourage you to give Ruby a try.  It is not a new language. It has been out for
+quite awhile and the Rails framework is very solid for building a variety of different applications.  If you are like me, coming over from ColdFusion, you will wonder in awe of waving
+bye bye to the lame tag syntax and lack of gems, bundler, etc.  Your life coding will be so much more enjoyable. So where do you begin? I was recently asked at my day gig to come up
+with a list of resources that I used to dive into the language.  I will warn you there are plenty of opinions baked into this list so read with caution.
+</p>
+<p>
+<strong>Hardware</strong>
+</p>
+<p>
+If you’re running Windows, throw that machine out the window already and buy a Mac. If you are unable to or cannot afford a Mac, at least switch to a linux derivative.
+Use a VM if you have to.  Trust me, it will make your life so much easier.  Once you switch you will never look back.  If you need a sql server manager, don’t worry there are options.
+</p>
+<p>
+<strong>Software</strong>
+</p>
+<p>
+Ditch the IDEs for a text editor.  Download {% link http://www.sublimetext.com/3 "Sublime Text" %} 2, 3 if you are willing to pay for a license.  Get used to running terminal, {% link http://www.zsh.org/ "zsh" %}, and {% link http://www.iterm2.com "iterm2" %}.  Ditch external tools for git as well.
+If you are looking for a solid setup, here are the {% link https://github.com/chrishough/myconfigurations "configurations" %} I am currently running.   I regularly maintain that repo and feel free to ping me with questions.
+Purchase {% link http://www.alfredapp.com/ "Alfredapp" %} and {% link https://itunes.apple.com/us/app/dash-docs-snippets/id458034879?mt=12 "Dash" %}.  Both of these applications are huge time savers and well worth the cost.  There are variety of setup guides and I am working on expanding my repo to support a single click install.  In time...
+</p>
+<p>
+<strong>Learning</strong>
+</p>
+<p>
+Depending on how greenfield you are to programming, I advise folks to take a few different paths.  If you are completely new, I would recommend a formal code school like {% link http://www.epicodus.com/ "epicodus" %}
+for a truly immersive experience.  Learning many of the principles of coding on your own can be very daunting.  Before my wife signed up for a formal class, she had already been through all of the
+{% link http://teamtreehouse.com/ "Treehouse" %}, {% link https://www.codeschool.com/ "Codeschool" %}, and {% link http://www.codecademy.com/ "Codecademy" %} courses.  Depending on your skill set,
+I recommend all three.  If you are very novice, I would start with {% link http://teamtreehouse.com/ "Treehouse" %} first, than move on to {% link https://www.codeschool.com/ "Codeschool" %}.
+It will be frustrating.  It will take time.  Hold your head high and keep pushing forward.
+</p>
+<p>
+If you already know a language or two here are some pointers, to get your started.  I definitely recommend {% link https://www.codeschool.com/ "Codeschool" %} for learning the syntax,
+and picking up the following three books on {% link https://pragprog.com/ "PragProg" %}: {% link http://pragprog.com/book/ruby4/programming-ruby-1-9-2-0 "Programming Ruby" %}, {% link http://pragprog.com/book/achbd/the-rspec-book "Rspec" %},
+{% link http://pragprog.com/book/rails4/agile-web-development-with-rails-4 "Agile Development with Rails 4" %}.  They are priceless.  I know you are already used to
+{% link https://stackoverflow.com/ "stackoverflow" %} but here are a good set of links I use all of the time:
+<ul>
+  <li>{% link http://api.rubyonrails.org/ "Ruby on Rails API" %}</li>
+  <li>{% link https://www.ruby-toolbox.com/ "Ruby Toolbox" %}</li>
+  <li>{% link http://rubygems.org/ "Ruby Gems" %}</li>
+  <li>{% link https://github.com/chrishough/myconfigurations/blob/master/ruby/conventions.md "Ruby Naming Conventions" %}</li>
+  <li>{% link https://gist.github.com/rstacruz/1569572 "Rails Model Cheatsheet" %}</li>
+  <li>{% link http://pryrepl.org/ "Pry: A powerful alternative to the standard IRB shell for Ruby" %}</li>
+  <li>{% link http://railscasts.com/ "Railscasts" %}</li>
+</p>
+<p>
+Experiment.  Start off by building a few applications and following tutorials, you will be cracking away at it in no time.  Most importantly, be humble, listen to
+others for guidance.  It’s important to realize that not everything will transfer from your previous language so be patient.
+</p>
+<p>
+<strong>Community</strong>
+</p>
+<p>
+I cannot emphasize this enough.  Join and participate in your local user group.  If you are in a rural town, start your own.  Trust me, you will find at least a few others to hack with
+on the weekend.  Reach out to others you connect with online to pair program remotely, and attend conferences.  Yes, conferences cost money, but you will learn and meet so many experts,
+you will more that double your money back in returns long term.  Here are a great set of podcasts that dive into many of the issues ruby programmers face day to day:
+<ul>
+  <li>{% link http://rubyrogues.com/ "Ruby Rogues" %}</li>
+  <li>{% link http://www.freelancersshow.com/ "The Ruby Freelancers Show" %}</li>
+</ul>
+</p>
+<p>
+This is not an exhaustive list, and I hope to write follow-ups in time.  Please let me know what you think.
+</p>

@@ -1,0 +1,9 @@
+|{% capture post_category_count %}{{ post.categories | size }}{% endcapture %}
+|{% if post_category_count != '0' %}
+|	<div class="w-blogpost-meta-tags">
+|		<i class="fa fa-folder-open"></i>
+|		{% for category in post.categories %}
+|    	<a href="{% category_url {{ category }} %}" class="force-capitalize">{{ category }}</a>
+|		{% endfor %}
+|	</div>
+|{% endif %}

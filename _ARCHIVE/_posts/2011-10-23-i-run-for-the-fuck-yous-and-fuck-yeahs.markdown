@@ -1,0 +1,22 @@
+---
+layout: post
+title: "I run 4 the Fuck Yous & Fuck Yeahs!"
+image_thumbnail_500x320: "Irunx320.png"
+image_thumbnail_500x500: "Irunx500.png"
+categories: [life]
+tags: [fitness]
+---  
+
+<p>What do you think of when you run? When you&rsquo;re busting your ass at the gym? Is it only about losing weight or something more? &nbsp;My journey to health started a few years ago when I landed in Colorado. &nbsp;I used to weigh over 200lbs! Yes, I know. &nbsp;Fat ass! Seriously though, it was pretty disgusting, and if you ever visit Colorado, you&rsquo;ll learn quickly why it&rsquo;s known as the healthiest state in the U.S.</p>
+
+<!-- more -->
+
+{% vimeo 5739058 %}
+
+<p>When I met my wife she encouraged me to start training, working out for more than just weight loss, and instead focusing on events. &nbsp;Not competing to win, but running to be part of the small percentage of like minded bad asses that swim, bike, run for fun. &nbsp;The same drive and determination to succeed in life easily applies to racing, to exercise, to anything for that matter. &nbsp;After deep periods of reflection in my life I came to discover that I always did everything, every sport, every task, whatever 110%. &nbsp;That means if you sat a bottle of Kettle One in front of me, consider it gone. Type-A people don&rsquo;t fuck around, they don&rsquo;t waste time. &nbsp;They need a mission, a goal to hook on to, to run with, to put that high paced energy into. &nbsp;Often, they choose poorly. &nbsp;I chose to be an athlete.</p>
+<p>When I first started running, I used to picture all of the people, places, events that pissed me off. &nbsp;You know the ones right? &nbsp;I pictured them as though I was there, tasting the air, feeling the emotions rushing through my veins. In my mind, I was punching that person in the face, standing up in front of haters and screaming fuck you, driving that ferrari 360 modena top down at 150mph. &nbsp;Working out angry solved a problem. It seemed to fill a void. &nbsp;The rush of adrenaline helped kill off the old feelings, the baggage I had been carrying.</p>
+
+<p>As an athlete you can either work out angry or happy. &nbsp;I only knew how to run for the fuck yous. &nbsp;More and more time went by, and I shaved more and more time off my current mile pace as well as built a good amount of new muscle mass, yet, something was missing. &nbsp;I was losing energy. &nbsp;The anger wasn&rsquo;t there anymore. &nbsp;One day running on the treadmill my ipod started blasting &ldquo;I Remember&rdquo;, by Kaskade.</p>
+<p>I felt a new rush come over me that I had never felt before. &nbsp;It was pure happiness. &nbsp;I wasn&rsquo;t mad anymore. &nbsp;This newfound energy rushed through my veins even more powerful than when I was angry. I felt lighter, less burdened, and the thoughts rushing through my mind were happy, thankful, filled with joy. &nbsp;I started running for the fuck yeahs.</p>
+<p>The people, the events, the experiences I am grateful for in life. &nbsp;The times I cried out of joy, the plans I have for the future, the focus I have in my journey of enlightenment. &nbsp;Living. &nbsp;I know nothing is perfect in life, but what I have learned so far, is that being negative, carrying anger, being mad, just wastes time. &nbsp;It brings negative energy into your life and the lives of those around you. &nbsp;Yes, running angry for me served a purpose, a means to purge myself of older lingering feelings, to get rid of fear, to make room for the holes to be filled with light. &nbsp;If you&rsquo;re working out angry, be conscious of these feelings, let them pass, and work towards working out happy. &nbsp;Be yourself, and let these feelings go, move on to better things.</p>
+<p>Today is Monday, October 24th 2011, and this is my first ever blog post. &nbsp;If you do not like what I have to say, so be it. &nbsp;Go somewhere else. &nbsp;I don&rsquo;t care if you like it or not, my writing is not for everyone. &nbsp;If you care to share what inspires you to run, I would love to find out. &nbsp;I hope we can inspire each other.</p>

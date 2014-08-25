@@ -1,0 +1,21 @@
+doctype html
+html[lang="en-US"]
+  head
+    meta[charset="UTF-8"]
+    meta[name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"]
+    meta[name="HandheldFriendly" content="True"]
+    meta[name="MobileOptimized" content="320"]
+    meta[name="description" content="#{site_description}"]
+
+    = partial "layouts/components/title"
+
+    /[if lte IE 9]
+      javascript:
+        window.location = "/error/badbrowser.html";
+
+    = partial "layouts/components/favicons"
+    = stylesheet_link_tag "application"
+
+  body[id="page"]
+    == yield
+    = javascript_include_tag "application"

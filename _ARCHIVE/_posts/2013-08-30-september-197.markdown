@@ -1,0 +1,91 @@
+---
+layout: post
+title: "September:197"
+image_thumbnail_500x320: "CHoughSeptember2013x320.JPG"
+image_thumbnail_500x500: "CHoughSeptember2013x500.JPG"
+categories: [life]
+tags: [fitness]
+---
+
+
+<p>
+I knew this month’s weigh in was not going to be the big win I had hoped for, but hell it’s a start.  I’m down a few pounds.
+From July 1st until today I have started to see impressive gains in the amount of weight I can regularly left, speed at which
+I can finish a super set, and the increased stamina I have been able to maintain.  It does go without saying I look like a
+crazy wild animal and I scare the shit out of the clean cut Nike folks at our local 24hr fitness, but screw the haters.
+Starting this month I am beginning to document each of the weight markers I obtain and set them appropriately for next month.
+While I have not seen the rapid weight loss I had hoped to achieve, I know muscle weighs in heavier than fat.  I am slimming down.
+Let’s be honest.<!-- more -->  My diet last month was not ideal.  I tried the vegan route, no dice, tried vegetarian, came close,
+but at the end of the day I settled with 90/10.  I am going to eat meat and fish.  Humans have teeth for a reason.
+While I may not buy the amount of products for the home I once did, I am no longer going to restrict myself from
+cheeseburgers every once in a while.  Considering the average length of my workouts 1.5-2hrs 5-6x a week, I think
+a little meat will not hurt me too much.  Lately I have converted to consuming 2 heavy protein shakes, one for
+breakfast, the other for dinner, and a 400-600 calorie lunch.  The first week was brutal, but I immediately
+started seeing results as of August 11th.  If you have been following my writing, I tend to change up my
+workout plan frequently. I believe in muscle confusion, and this is my workout for the next month. I plan
+to weigh in on October 1st.  So why do I keep fighting this battle?
+</p>
+<p>{% img left /content/CHoughSeptember2013.JPG Still Fat 300 300 %}</p>
+<p>
+Inspiration.
+</p>
+<p>
+This month so far I have been lucky enough to have a few moments of clarity amongst the startup life madness.  First, it’s the
+Starbucks trenta size coffee.  Let me be clear, I detest going to Starbucks but it’s the only place open late by my house so
+I am often trapped.   Every time I drop by I make the same mistake of asking for a large iced coffee and every time they
+reach for the trenta.  I sit there, frozen, and think to myself who would possibly want to consume that monstrosity.
+Not only do I have to correct them each time and size down to a normal human sized cup, but I have to ask them to not
+sweeten it.  I mean, seriously, we need sugar in everything?  So over the last few months, I have started keeping
+stats and asking the Starbucks employees if the cup purchased often corresponds to the size of the human consuming it.
+While many just laugh, or slightly chuckle, I have noticed the same consistent response.  Yes.  I know they can not say
+it, they would get fired, but late last week one brave soul gave me the answer my stats needed.  That brave soul will
+be left nameless.  My second moment of enlightenment comes from a collection of threads I see randomly only almost each
+and every day across the inter webs.
+</p>
+<p>
+Time.  I have become convinced that any individual can make their day sound like it’s the busiest nightmare imaginable.
+When did we become such fucking cry babies?  I’m sorry, but the occasionally shitty day does happen, trust me I have mine
+frequently, but the assembly plant doesn’t stop.  I’m often up to 2am regularly, start a work day a few hours later,
+manage to get laundry done, multiple meals, health and fitness goals, day career and startup night initiatives all
+finished.  I watched my parents work their ass off for what they have as many of the people around them bitched and moaned.
+I subscribe to that same mentality.  People wonder why 90% of the world’s wealth is controlled by 10% of the population.
+Catch a clue.  Maybe they do not bitch, or whine about hard life is.  They are just like you and me, but they
+make the choice to say fuck it, and fight.  I know I am not at the top yet, and I may never get there in my mind.  What
+I do know is that I fight hard, play hard, and I will fucking die fighting.  
+</p>
+{% blockquote Clarence Budington Kelland http://www.goodreads.com/quotes/296045-my-father-didn-t-tell-me-how-to-live-he-lived %}
+My father didn't tell me how to live; he lived, and let me watch him do it.
+{% endblockquote %}
+<p>
+What has inspired you this month? Do you
+walk aimlessly around like a zombie or are you an active parcipate in this game called life.
+</p>
+<p>
+Wake up. Act.
+</p>
+<p><strong>Monday</strong></p>
+```
+15 minute run
+Super Set * 3: 10x dumbell shoulder press 52.5/55lbs, 10x dumbbell side lateral shoulder raise 12lbs, 10x dumbbell front lateral shoulder raise 12lbs, 10x dumbell shrugs 60/70lbs
+Super Set * 3: Bicep 21s, 15x crunches, 10x push-ups, 10x dumbbell tricep extensions standing above head 45/55lbs, Plank (1 minute hold)
+3x15 wide grip lat pull downs 80/100lbs
+```
+<p><strong>Wednesday</strong></p>
+```
+15 minute run
+Super Set * 3: 10 bench press 155/135lbs, 10 One Arm Dumbbell Row (each side) 50lbs, 15 crunches, Plank (1 minute hold)
+Super Set * 3: 10 cable flies 25/35lbs, 10 lower leg raise (lemon drops)
+3x10 Hanging Leg Lifts
+```
+<p><strong>Friday</strong></p>
+```
+15 minute run
+Super Set * 3: 12x Inverted Leg Presses 270/310lbs, 10x box jumps, 15x 35lb plate oblique raises(left & right sides), 15x 35lb plate back extensions
+Super Set * 3: 10x leg extensions, 10x leg curl
+3x20 Sitting Calve Raises
+```
+<p><strong>Saturday | Sunday</strong></p>
+```
+15 minute run
+3x15 medicine ball tosses
+```

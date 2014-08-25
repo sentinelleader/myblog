@@ -1,0 +1,44 @@
+| {% slim V2/header/wrapper.slim %}
+/ CANVAS
+div[class="l-canvas type_wide col_contside headerpos_fixed headertype_extended"]
+	div[class="l-canvas-h"]
+		| {% slim V2/header/navigation.slim %}
+		/ MAIN
+		div[class="l-main bkgd-texture-three"]
+			div[class="l-main-h"]
+				/ -----------------------------------------------------------------------------------------------
+				div[class="l-submain"]
+					div[class="l-submain-h g-html i-cf"]
+						div[class="l-content"]
+							div[class="l-content-h"]
+								/ -----------------------------------------------------------------------------------------------
+								div[class="w-blogpost meta_all"]
+									div[class="w-blogpost-h"]
+										div[class="w-blogpost-content"]
+											h1[class="w-blogpost-title force-capitalize"]
+												| {{ page.title }}
+											div[class="w-blogpost-meta"]
+												div[class="w-blogpost-meta-date"]
+													i[class="fa fa-clock-o"]
+													| {% slim V2/page/date.slim %}
+												/ -----------------------------------------------------------------------------------------------
+												| {% slim V2/page/categories.slim %}
+											/ -----------------------------------------------------------------------------------------------
+											div[class="w-blogpost-text post-content"]
+												|{{content}}
+										/ -----------------------------------------------------------------------------------------------
+										| {% include V2/page/social_share.html %}
+										| {% slim V2/page/tags.slim %}
+								/ -----------------------------------------------------------------------------------------------
+								| {% slim V2/post/related_posts.slim %}
+						/ -----------------------------------------------------------------------------------------------
+						div[class="l-sidebar at_right"]
+							div[class="l-sidebar-h"]
+								| {% slim V2/widget/categories.slim %}
+								| {% include V2/widget/archive_monthly.html %}
+								| {% slim V2/widget/tags.slim %}
+								| {% slim V2/widget/codeschool.slim %}
+								| {% slim V2/widget/recent_posts.slim %}
+
+/ -----------------------------------------------------------------------------------------------
+| {% slim V2/footer/wrapper.slim %}

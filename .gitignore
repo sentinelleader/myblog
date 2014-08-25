@@ -64,5 +64,4 @@ Thumbs.db
 *.sublime-workspace
 codekit-config.json
 node_modules
-_ARCHIVE
 _TESTME
