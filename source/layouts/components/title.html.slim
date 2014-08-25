@@ -1,2 +1,5 @@
 title
-  = site_title + " | " + current_page.data.title
+  - if current_page.data.title
+    = site_title + " | " + current_page.data.title
+  - else
+    = site_title + " | " + site_author

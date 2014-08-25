@@ -1,68 +1,7 @@
 @import "reset";
-
-$global-min-width-range: 1em !default; /* 320px */
-$small-range: (0em, 40em) !default;         /* 0, 640px */
-$medium-range: (40.063em, 64em) !default;   /* 641px, 1024px */
-$large-range: (64.063em, 90em) !default;    /* 1025px, 1440px */
-$xlarge-range: (90.063em, 120em) !default;  /* 1441px, 1920px */
-$xxlarge-range: (120.063em) !default;       /* 1921px */
-
-$screen: "only screen" !default;
-$landscape: "#{$screen} and (orientation: landscape)" !default;
-$portrait: "#{$screen} and (orientation: portrait)" !default;
-$retina: "#{$screen} and (-webkit-min-device-pixel-ratio: 2)" !default;
-
-$small-up: $screen !default;
-$small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})" !default;
-
-@import "font-awesome";
-@import "effects";
-
-body {
-  padding-top: 0px;
-  background-color: #000;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-image:image-url('/assets/images/bricks.png');
-}
-.center-wrapper{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  @include round-corners(2rem);
-}
-.center-container{
-  padding: 2em;
-}
-.entry-title{
-  color: #000;
-  font-size: 3rem;
-  padding-bottom: 5px;
-}
-.locations, .social{
-  padding: 0px;
-  margin: 5px;
-  text-align: center;
-}
-.locations > li, .social > li{
-  list-style-image: none;
-  display: inline-block;
-}
-.fa-twitter-square{
-  padding-right: 5px;
-  padding-left: 5px;
-}
-
-@media #{$small-only} {
-  .social > li{
-    display: block;
-  }
-}
+@import "font/fontawesome";
+@import "plugins";
+@import "theme";
+@import "colors";
+@import "timeline";
+@import "override";

@@ -19,10 +19,10 @@
     /   |  {{ site.title }}
     /   |{% endif %}
 
-    | {{ 'V2/application' | stylesheet }}
-
-    | {% slim V2/header/favicons.slim %}
-    | {% slim V2/header/web_fonts.slim %}
+    / | {{ 'V2/application' | stylesheet }}
+    /
+    / | {% slim V2/header/favicons.slim %}
+    / | {% slim V2/header/web_fonts.slim %}
 
     | {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
     <link rel="canonical" href="{{ canonical }}">
@@ -43,4 +43,4 @@
     |{% endif %}
 
   /-----------------------------------------------------------------------------------------------------
-  body[class="l-body"]
+  / body[class="l-body"]

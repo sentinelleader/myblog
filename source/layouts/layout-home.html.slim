@@ -11,14 +11,15 @@ html[lang="en-US"]
       meta[http-equiv="refresh" content="0;URL=/error/javascript/"]
 
     = partial "layouts/components/title"
+    = partial "layouts/components/favicons"
+    = partial "layouts/components/web_fonts"
 
     /[if lte IE 9]
       javascript:
         window.location = "/error/badbrowser.html";
 
-    = partial "layouts/components/favicons"
     = stylesheet_link_tag "application"
 
-  body[id="page"]
+  body[class="l-body"]
     == yield
     = javascript_include_tag "application"
