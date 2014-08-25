@@ -4,4 +4,8 @@ html
     = partial "layouts/components/title"
 
   body
+    p
+      strong
+        = current_page.data.reason
+
     == yield

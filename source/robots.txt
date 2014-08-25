@@ -1,8 +1,7 @@
 ---
 layout: none
-permalink: /robots.txt
 ---
-User-agent: * 
+User-agent: *
 
 # ------------------------------------------------------------------------
 # GOOGLE
@@ -11,7 +10,7 @@ User-agent: *
 User-agent: Googlebot-Image
 Disallow:
 Allow: /*
- 
+
 User-agent: Mediapartners-Google*
 Disallow:
 Allow: /*
@@ -25,7 +24,7 @@ Sitemap: {{ site.url }}/sitemap.xml
 # ------------------------------------------------------------------------
 # BLOCK BAD BOTS
 # ------------------------------------------------------------------------
- 
+
 User-agent: Twiceler www.cuill.com/robots.html
 Disallow: /
 User-agent: Mozilla/5.0 (Twiceler-0.9 http://www.cuill.com/twiceler/robot.html)
