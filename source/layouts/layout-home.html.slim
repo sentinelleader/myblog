@@ -1,25 +1,24 @@
-doctype html
-html[lang="en-US"]
-  head
-    meta[charset="UTF-8"]
-    meta[name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"]
-    meta[name="HandheldFriendly" content="True"]
-    meta[name="MobileOptimized" content="320"]
-    meta[name="description" content="#{site_description}"]
+= partial "layouts/components/wrapper"
 
-    noscript
-      meta[http-equiv="refresh" content="0;URL=/error/javascript/"]
+div[class="l-canvas type_wide col_contside headerpos_fixed career"]
+  div[class="l-canvas-h"]
+    div[class="l-header"]
+      div[class="l-header-h"]
 
-    = partial "layouts/components/title"
-    = partial "layouts/components/favicons"
-    = partial "layouts/components/web_fonts"
+        div[class="l-subheader at_middle bkgd-texture-four"]
+          div[class="l-subheader-h i-cf"]
+            div[class="w-logo"]
+              div[class="w-logo-h"]
+                = partial "layouts/components/logo"
 
-    /[if lte IE 9]
-      javascript:
-        window.location = "/error/badbrowser.html";
+          = partial "layouts/components/search"
+          = partial "layouts/components/menu"
 
-    = stylesheet_link_tag "application"
+    div[class="l-main"]
+      div[class="l-main-h"]
+        == yield
 
-  body[class="l-body"]
-    == yield
-    = javascript_include_tag "application"
+a[class="w-toplink" href="#"]
+  i[class="fa fa-angle-up"]
+
+= partial "layouts/components/scripts"

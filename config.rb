@@ -4,6 +4,8 @@ set :images_dir, 'assets/images'
 set :css_dir, 'assets/stylesheets'
 set :fonts_dir, 'assets/fonts'
 
+activate :relative_assets
+
 configure :build do
   activate :minify_css
   activate :minify_javascript
@@ -40,6 +42,7 @@ set :site_owner_twitter, 'chrishough'
 set :site_owner_instagram, 'chrishough'
 set :site_owner_github, 'chrishough'
 set :site_owner_foursquare, 'chrishough'
+set :site_owner_configurations, 'https://github.com/chrishough/myconfigurations'
 
 set :browser_msft, '10'
 set :browser_google, '32'

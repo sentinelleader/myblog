@@ -1,0 +1,23 @@
+doctype html
+html[lang="en-US"]
+  head
+    meta[charset="UTF-8"]
+    meta[name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"]
+    meta[name="HandheldFriendly" content="True"]
+    meta[name="MobileOptimized" content="320"]
+    meta[name="description" content="#{site_description}"]
+
+    noscript
+      meta[http-equiv="refresh" content="0;URL=/error/javascript/"]
+
+    = partial "layouts/components/title"
+    = partial "layouts/components/favicons"
+    = partial "layouts/components/web_fonts"
+
+    /[if lte IE 9]
+      javascript:
+        window.location = "/error/badbrowser.html";
+
+    = stylesheet_link_tag "application"
+
+  body[class="l-body"]

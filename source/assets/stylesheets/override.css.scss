@@ -174,7 +174,7 @@ select, input[type="text"] {
 .career{
 	//-----------------------------------------------------------------------------------------------
 	.avatar{
-		@include background($img_name:"20131208-Hero-Bg.png", $position: center top, $cover: true);
+		@include background($img_name:"resume/20131208-Hero-Bg.png", $position: center top, $cover: true);
 		padding-top: 50px;
 		padding-bottom: 50px;
 		h1, i, p{
@@ -250,7 +250,7 @@ select, input[type="text"] {
 	//-----------------------------------------------------------------------------------------------
 	//-----------------------------------------------------------------------------------------------
 	.resume{
-		@include background($img_name:"20131208-Timeline-Bg.jpg", $position: center top, $cover: true);
+		@include background($img_name:"resume/20131208-Timeline-Bg.jpg", $position: center top, $cover: true);
 		padding-top: 50px;
 		padding-bottom: 50px;
 		h1{
@@ -267,7 +267,7 @@ select, input[type="text"] {
 	//-----------------------------------------------------------------------------------------------
 	//-----------------------------------------------------------------------------------------------
 	.projects{
-		@include background($img_name:"20131208-Projects-Bg.png", $position: center top, $cover: true);
+		@include background($img_name:"resume/20131208-Projects-Bg.png", $position: center top, $cover: true);
 		padding-top: 50px;
 		padding-bottom: 50px;
 		.g-cols:first-child{padding-bottom: 20px;}

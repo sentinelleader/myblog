@@ -101,7 +101,7 @@
 // ***************************************************************************************** */
 @mixin background($imgpath, $position: 0 0, $repeat: no-repeat, $height: 0, $color: false, $cover: false, $fixed: false) {
   background: {
-    image: asset-url($imgpath);
+    image: image-path($imgpath);
     repeat: $repeat;
     position: $position;
   }

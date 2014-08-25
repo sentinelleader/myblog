@@ -1,0 +1,17 @@
+div[class="w-search"]
+  div[class="w-search-h"]
+    a[class="w-search-show" href="javascript:void(0)"]
+      i[class="fa fa-search"]
+    form[class="w-search-form show_hidden" action="https://www.google.com/search"]
+      input[type="hidden" name="q" value="site:{{ site.search_url }}"]
+      div[class="w-search-form-h"]
+        div[class="w-search-form-row"]
+          div[class="w-search-label"]
+            label[for="q"]
+              |Just type and press 'enter'!
+          div[class="w-search-input"]
+            input[id="q" name="q" type="text" value=""]
+          div[class="w-search-submit"]
+            input[type="submit" value="Search"]
+          a[class="w-search-close" href="javascript:void(0)" title="Close search"]
+            |&#10005;
