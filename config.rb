@@ -60,5 +60,12 @@ set :browser_google, '32'
 set :browser_firefox, '26'
 set :browser_safari, '6'
 
+set :startup_url, 'http://lustocracy.com'
+set :startup_url_slogan, 'Lustocracy empowers people to own their sexuality by providing a safe, sexy, and authentic community, and by sharing exhilarating and revolutionary experiences. Lustocracy is Modern. American. Sex.'
+set :startup_editorial_url, 'http://pov.lustocracy.com'
+set :startup_editorial_slogan, 'POV is the official blog of Lustocracy, a technology and media company that facilitates exhilarating and revolutionary sexual expression. Our mission is to empower people to own their sexuality by providing a safe, sexy, and authentic community, and by sharing exhilarating and revolutionary experiences.'
+set :startup_product_one, 'Lustocracy Platform'
+set :startup_product_two, 'Lustocracy Editorial'
+
 set :google_analytics, 'UA-37324451-1'
 set :google_analytics_site, 'noconformity.com'

@@ -1,0 +1,35 @@
+div[class="g-cols"]
+  div[class="full-width"]
+    h1[class="align_center"]
+      |Huedio
+    p
+      |Ask my closest friends, and they will tell you I am addicted to the grind. I love to build things and believe in constant learning. Although we have pivoted a few times over the past few years, my wife #{link_to("Kathryn Hough","http://twitter.com/kathrynhough")} and I have been using our technical chops to take on problems in industries that match our personalities and values.
+
+div[class="w-portfolio columns_2"]
+  div[class="w-portfolio-h"]
+    div[class="w-portfolio-list"]
+      div[class="w-portfolio-list-h"]
+
+        div[class="w-portfolio-item lustocracy-platform-wrapper"]
+          div[class="w-portfolio-item-h lustocracy-platform"]
+            a[class="w-portfolio-item-anchor" href="#{startup_url}"]
+              div[class="w-portfolio-item-image"]
+                img[class="w-portfolio-item-image-first" src="#{image_path('projects/20140413-lustocracy-platform.png')}" alt="#{startup_product_one}"]
+                div[class="w-portfolio-item-meta align_left"]
+                  h3[class="w-portfolio-item-title"]
+                    span[class="product-name"]
+                      = startup_product_one
+                    = startup_url_slogan
+                  span[class="w-portfolio-item-arrow"]
+
+        div[class="w-portfolio-item lustocracy-editorial-wrapper"]
+          div[class="w-portfolio-item-h lustocracy-editorial"]
+            a[class="w-portfolio-item-anchor" href="#{startup_editorial_url}"]
+              div[class="w-portfolio-item-image"]
+                img[class="w-portfolio-item-image-first" src="#{image_path('projects/20140413-lustocracy-editorial.png')}" alt="#{startup_product_two}"]
+                div[class="w-portfolio-item-meta align_left"]
+                  h3[class="w-portfolio-item-title"]
+                    span[class="product-name"]
+                      = startup_product_two
+                    = startup_editorial_slogan
+                  span[class="w-portfolio-item-arrow"]

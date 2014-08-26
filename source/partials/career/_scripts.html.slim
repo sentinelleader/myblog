@@ -1,0 +1,45 @@
+javascript:
+  (function ($) {
+    $.fn.vAlign = function() {
+      return this.each(function(i){
+      var ah = $(this).height();
+      var ph = $(this).parent().height();
+      var mh = Math.ceil((ph-ah) / 2);
+      $(this).css('padding-top', mh);
+      });
+    };
+  })(jQuery);
+
+  (function($) {
+    $(document).ready( function() {
+      if( $('.map-canvas').length > 0) {
+        var $map = $('.map-canvas');
+        $map.gmap().bind('init', function(ev, map) {
+          $map.gmap('addMarker', {'position': '41.87811,-87.62980', 'bounds': true, 'icon':new google.maps.MarkerImage('http://maps.google.com/mapfiles/kml/pal2/icon13.png')}).click(function() {
+            $map.gmap('openInfoWindow', {'content': 'Chicago: Hometown'}, this);
+          });
+          $map.gmap('addMarker', {'position': '40.01499,-105.27055', 'bounds': true, 'icon':new google.maps.MarkerImage('http://maps.google.com/mapfiles/kml/pal2/icon13.png')}).click(function() {
+            $map.gmap('openInfoWindow', {'content': '2008 Boulder: Started Huedio'}, this);
+          });
+          $map.gmap('addMarker', {'position': '40.78701,-73.97537', 'bounds': true, 'icon':new google.maps.MarkerImage('http://maps.google.com/mapfiles/kml/pal2/icon13.png')}).click(function() {
+            $map.gmap('openInfoWindow', {'content': '2010 New York: Married'}, this);
+          });
+          $map.gmap('addMarker',{'position': '45.52345,-122.67621', 'bounds': true, 'icon':new google.maps.MarkerImage('http://maps.google.com/mapfiles/kml/pal2/icon10.png')}).click(function() {
+            $map.gmap('openInfoWindow', {'content': '2012 Portland: Home'}, this);
+          });
+          $map.gmap('option', 'zoom', 4);
+        });
+      };
+    });
+  })(jQuery);
+
+  $('.team-member-data').parent().height($('.team-member-avatar').height());
+  $('.team-member-data').vAlign();
+  $(window).bind('resize', function(){
+    $('.team-member-data').parent().height($('.team-member-avatar').height());
+    $('.team-member-data').vAlign();
+  });
+
+  function scroll_to(pos){
+    $('html, body').animate({ scrollTop: $('#'+pos).offset().top-90}, 500);
+  }
