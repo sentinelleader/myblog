@@ -1,0 +1,19 @@
+div[class="g-cols"]
+  div[class="one-half"]
+    div[class="w-team-member team-member-avatar"]
+      div[class="w-team-member-h"]
+        div[class="w-team-member-image avatar-image"]
+          = image_tag 'resume/20140413-Blog.png'
+
+  div[class="one-half"]
+    div[class="w-team-member team-member-data"]
+      div
+        h1
+          = site_author
+        p
+          i[class="fa fa-quote-left"]
+          = site_slogan
+          i[class="fa fa-quote-right"]
+
+      div[class="w-socials size_normal"]
+        = partial "layouts/components/social"

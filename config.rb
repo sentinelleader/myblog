@@ -1,8 +1,14 @@
+require "lib/helpers/menu_helpers"
+helpers MenuHelpers
 
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 set :css_dir, 'assets/stylesheets'
 set :fonts_dir, 'assets/fonts'
+set :layouts_dir, 'layouts'
+set :partials_dir, 'partials'
+# set :data_dir
+# set :helpers_dir
 
 activate :relative_assets
 
@@ -16,6 +22,10 @@ configure :build do
   activate :imageoptim do |image_optim|
     image_optim.pngout_options = false # Should disable pngout
   end
+end
+
+after_build do
+  FileUtils.rm_rf ["build/partials"]
 end
 
 configure :development do
@@ -41,7 +51,6 @@ set :site_owner_email, 'chris@noconformity.com'
 set :site_owner_twitter, 'chrishough'
 set :site_owner_instagram, 'chrishough'
 set :site_owner_github, 'chrishough'
-set :site_owner_foursquare, 'chrishough'
 set :site_owner_configurations, 'https://github.com/chrishough/myconfigurations'
 
 set :browser_msft, '10'

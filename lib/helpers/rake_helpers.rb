@@ -1,4 +1,4 @@
-module HelperFunctions
+module RakeHelpers
 
 	# Permitted environments
 	def environments(env, restrict: nil)
