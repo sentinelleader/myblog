@@ -6,7 +6,7 @@ namespace :server do
 			RakeHelpers::shell('middleman server -e development')
 		end
 	end
-	task :build do
+	task :build => :delete do
 		verbose(false) do
 			RakeHelpers::msg("Building static files, but I will not be starting the server")
 			RakeHelpers::shell('middleman build')

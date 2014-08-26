@@ -9,8 +9,7 @@ set :layouts_dir, 'layouts'
 set :partials_dir, 'partials'
 # set :data_dir
 # set :helpers_dir
-
-activate :relative_assets
+# activate :relative_assets
 
 configure :build do
   activate :minify_css
