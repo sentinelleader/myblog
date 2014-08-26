@@ -12,19 +12,19 @@ set :partials_dir, 'partials'
 # activate :relative_assets
 
 configure :build do
-  activate :minify_css
-  activate :minify_javascript
-  activate :minify_html
-  activate :asset_hash
-  activate :relative_assets
-  activate :gzip
-  activate :imageoptim do |image_optim|
-    image_optim.pngout_options = false # Should disable pngout
-  end
+  # activate :minify_css
+  # activate :minify_javascript
+  # activate :minify_html
+  # activate :asset_hash
+  # activate :relative_assets
+  # activate :gzip
+  # activate :imageoptim do |image_optim|
+  #   image_optim.pngout_options = false # Should disable pngout
+  # end
 end
 
 after_build do
-  FileUtils.rm_rf ["build/partials"]
+  # FileUtils.rm_rf ["build/partials"]
 end
 
 configure :development do
