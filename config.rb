@@ -1,5 +1,7 @@
 require "lib/helpers/menu_helpers"
+require "lib/helpers/view_helpers"
 helpers MenuHelpers
+helpers ViewHelpers
 
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
@@ -51,6 +53,7 @@ set :site_owner_twitter, 'chrishough'
 set :site_owner_instagram, 'chrishough'
 set :site_owner_github, 'chrishough'
 set :site_owner_configurations, 'https://github.com/chrishough/myconfigurations'
+set :site_owner_cv, 'https://github.com/chrishough/myresume'
 
 set :browser_msft, '10'
 set :browser_google, '32'
