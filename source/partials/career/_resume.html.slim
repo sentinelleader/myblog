@@ -1,0 +1,297 @@
+div[class="g-cols"]
+  div[class="full-width"]
+    h1[class="align_center"]
+      |Resume
+
+div[class="g-cols"]
+  div[class="full-width"]
+    ul[id="timeline"]
+      li[class="year"]
+        = Time.now.year
+
+      li[class="event"]
+        h3[class="heading"]
+          = link_to("PlaceWise Media", "http://www.placewise.com")
+        h4[class="position"]
+          i[class="fa fa-wrench"]
+          |Director of Application Engineering
+        span[class="month"]
+          i[class="fa fa-calendar"]
+          |April 1st, 2014 – Present
+        span[class="location"]
+          i[class="fa fa-map-marker"]
+          |Denver, Colorado
+        p
+          |Remotely performance manage the application engineering team, which focus includes enterprise APIs written in ruby on rails, the RetailHub client dashboard like data management application, and overall legacy systems migration planning.
+        p
+          |Project deliverables are managed through JIRA, Confluence, Scrum planning, and sprint schedules.  I work hard to keep tickets small, sizes appropriate, and remove roadblocks quickly. These processes include 30/60/90 reviews and goal setting.  As a huge advocate for constant communication we have implemented Slack and pair regularly to achieve our deliverables.
+        p
+          |TDD. We are working hard to get to a Jenkins or a Travis CI configuration, but we are not there yet.  By effectively using pull requests, and code reviews our processes I have reduced code push volatility to a minimum.  Through mandating brakeman for security checks, robucop for style guides, and simplecov for code coverage our code output has increased significantly and it has been far easier to bring on new developers into ruby.  Outside of oss tools, I have implemented scoring via CodeClimate which fosters healthy competition of > 3.5 scores.
+        p
+          |Maintain weekly codecshool competitions for the entire technology department.  We have seen significant improvements in both morale and developer chops during this exercise.  I believe it is a developer’s core responsibility to up their game regularly.
+        p
+          |Leading the charge on eliminating the legacy php and coldfusion components of our architecture stack.  This process of implementing an SOA like architecture started in August of 2013 and we have made significant progress.  While the legacy stack has 10 years worth of layers in it, the team is working to have it eliminated in less than 2 years.
+
+        figure
+          a[href="https://www.ruby-lang.org" target="_blank"]
+            = image_tag 'logos/ruby.png'
+          a[href="https://aws.amazon.com" target="_blank"]
+            = image_tag 'logos/aws.png'
+          a[href="https://www.heroku.com" target="_blank"]
+            = image_tag 'logos/heroku.png'
+          a[href="https://www.github.com" target="_blank"]
+            = image_tag 'logos/git.png'
+          a[href="https://www.atom.io" target="_blank"]
+            = image_tag 'logos/atom.png'
+          a[href="https://www.postgresql.org" target="_blank"]
+            = image_tag 'logos/postgres.png'
+          a[href="https://lucene.apache.org/solr/" target="_blank"]
+            = image_tag 'logos/solr.png'
+          a[href="https://www.microsoft.com/en-us/sqlserver/" target="_blank"]
+            = image_tag 'logos/sqlserver.png'
+          a[href="https://www.apple.com" target="_blank"]
+            = image_tag 'logos/apple.png'
+          a[href="https://www.middlemanapp.com" target="_blank"]
+            = image_tag 'logos/middleman.png'
+          a[href="https://www.emberjs.com" target="_blank"]
+            = image_tag 'logos/emberjs.png'
+          a[href="https://www.jquery.com" target="_blank"]
+            = image_tag 'logos/jquery.png'
+          a[href="https://www.getbootstrap.com" target="_blank"]
+            = image_tag 'logos/bootstrap.png'
+          a[href="https://foundation.zurb.com" target="_blank"]
+            = image_tag 'logos/zurbfoundation.png'
+          a[href="https://www.getsentry.com" target="_blank"]
+            = image_tag 'logos/sentry.png'
+          a[href="https://www.newrelic.com" target="_blank"]
+            = image_tag 'logos/newrelic.png'
+          a[href="https://www.codeclimate.com" target="_blank"]
+            = image_tag 'logos/codeclimate.png'
+
+      li[class="event"]
+        h3[class="heading"]
+          = link_to("PlaceWise Media", "http://www.placewise.com")
+        h4[class="position"]
+          i[class="fa fa-wrench"]
+          |Web Applications Engineer
+        span[class="month"]
+          i[class="fa fa-calendar"]
+          |August 31, 2009 – April 1st, 2014
+        span[class="location"]
+          i[class="fa fa-map-marker"]
+          |Denver, Colorado
+        p
+          |Through the help and management of an external ruby senior consultant we were able to redevelop a set of key APIs previously haphazardly written in a hacked combination of coldfusion and python django frameworks. This project originally covered six new services written in ruby on rails and migrated the entire setup from leased hardware to the cloud.
+        p
+          |After the departure of previous management and legacy developers, I converted the enterprise to Git from Subversion in less than 2 weeks.  We decoupled from Beanstalk and migrated each of 20 repositories to github.  This also included cross training where applicable.
+        p
+          |Re-architected the Retailhub content management application using the coldbox coldfusion mvc framework.  This software has multiple access tiers utilized by both internal and external clients to crud content, manage events and deals, and essentially act as the controller silo for each of our data points.  This includes multiple dashboards and complex user workflows that drive sales content throughout the enterprise.  This product is a key component of our customers’ successes.
+
+        figure
+          a[href="https://www.ruby-lang.org" target="_blank"]
+            = image_tag 'logos/ruby.png'
+          a[href="https://aws.amazon.com" target="_blank"]
+            = image_tag 'logos/aws.png'
+          a[href="https://www.heroku.com" target="_blank"]
+            = image_tag 'logos/heroku.png'
+          a[href="https://www.github.com" target="_blank"]
+            = image_tag 'logos/git.png'
+          a[href="https://www.atom.io" target="_blank"]
+            = image_tag 'logos/atom.png'
+          a[href="https://www.postgresql.org" target="_blank"]
+            = image_tag 'logos/postgres.png'
+          a[href="https://lucene.apache.org/solr/" target="_blank"]
+            = image_tag 'logos/solr.png'
+          a[href="https://www.microsoft.com/en-us/sqlserver/" target="_blank"]
+            = image_tag 'logos/sqlserver.png'
+          a[href="https://www.apple.com" target="_blank"]
+            = image_tag 'logos/apple.png'
+          a[href="https://www.adobe.com/products/coldfusion/" target="_blank"]
+            = image_tag 'logos/coldfusion.png'
+          a[href="https://www.coldbox.org" target="_blank"]
+            = image_tag 'logos/coldbox.png'
+          a[href="https://www.jquery.com" target="_blank"]
+            = image_tag 'logos/jquery.png'
+          a[href="https://subversion.apache.org" target="_blank"]
+            = image_tag 'logos/svn.png'
+
+      li[class="event"]
+        h3[class="heading"]
+          / javascript: scroll_to('projects')
+          |Huedio Corporation
+        h4[class="position"]
+          i[class="fa fa-wrench"]
+          |Co-Founder &amp; CEO
+        span[class="month"]
+          i[class="fa fa-calendar"]
+          |August 2012 – Present
+        span[class="location"]
+          i[class="fa fa-map-marker"]
+          |Portland, Oregon
+
+        figure
+          a[href="https://www.ruby-lang.org" target="_blank"]
+            = image_tag 'logos/ruby.png'
+          a[href="https://aws.amazon.com" target="_blank"]
+            = image_tag 'logos/aws.png'
+          a[href="https://www.heroku.com" target="_blank"]
+            = image_tag 'logos/heroku.png'
+          a[href="https://www.github.com" target="_blank"]
+            = image_tag 'logos/git.png'
+          a[href="https://www.atom.io" target="_blank"]
+            = image_tag 'logos/atom.png'
+          a[href="https://www.postgresql.org" target="_blank"]
+            = image_tag 'logos/postgres.png'
+          a[href="https://www.apple.com" target="_blank"]
+            = image_tag 'logos/apple.png'
+          a[href="https://www.middlemanapp.com" target="_blank"]
+            = image_tag 'logos/middleman.png'
+          a[href="https://www.jquery.com" target="_blank"]
+            = image_tag 'logos/jquery.png'
+          a[href="https://foundation.zurb.com" target="_blank"]
+            = image_tag 'logos/zurbfoundation.png'
+          a[href="https://www.getsentry.com" target="_blank"]
+            = image_tag 'logos/sentry.png'
+          a[href="https://www.newrelic.com" target="_blank"]
+            = image_tag 'logos/newrelic.png'
+
+      li[class="event"]
+        h3[class="heading"]
+          = link_to("NYU","http://www.scps.nyu.edu/")
+        h4[class="education"]
+          i[class="fa fa-book"]
+          |Ruby on Rails Programming Course
+        span[class="month"]
+          i[class="fa fa-calendar"]
+          |Completed 2012
+        span[class="location"]
+          i[class="fa fa-map-marker"]
+          |New York, New York
+
+        figure
+          a[href="https://www.ruby-lang.org" target="_blank"]
+            = image_tag 'logos/ruby.png'
+          a[href="https://www.heroku.com" target="_blank"]
+            = image_tag 'logos/heroku.png'
+          a[href="https://subversion.apache.org" target="_blank"]
+            = image_tag 'logos/svn.png'
+          a[href="https://www.github.com" target="_blank"]
+            = image_tag 'logos/git.png'
+          a[href="https://www.apple.com" target="_blank"]
+            = image_tag 'logos/apple.png'
+
+      li[class="year"]
+        |2009
+
+      li[class="event"]
+        h3[class="heading"]
+          = link_to("Skidmore Owings and Merrill LLP", "http://www.som.com")
+        h4[class="position"]
+          i[class="fa fa-wrench"]
+          |Applications Developer
+        span[class="month"]
+          i[class="fa fa-calendar"]
+          |January 7, 2008 – March 12th, 2009
+        span[class="location"]
+          i[class="fa fa-map-marker"]
+          |Chicago, Illinois
+
+        p
+          |Back-end developer supporting in house architectural project management systems written in a combination of coldfusion, javascript and sql server databases.  This included additions to the SOM public facing website as well as the complexities of architecting multi-lingual China based .cn platforms.
+        p
+          |Utilized the oss coldfusion cfmbb forums to architect the “som forums” which was used as a question and answer multi-tiered application supporting project managers across the enterprise.
+
+        figure
+          a[href="https://www.microsoft.com/en-us/sqlserver/" target="_blank"]
+            = image_tag 'logos/sqlserver.png'
+          a[href="https://www.adobe.com/products/coldfusion/" target="_blank"]
+            = image_tag 'logos/coldfusion.png'
+          a[href="https://www.fusebox.org" target="_blank"]
+            = image_tag 'logos/fusebox.png'
+          a[href="https://subversion.apache.org" target="_blank"]
+            = image_tag 'logos/svn.png'
+          a[href="https://www.jquery.com" target="_blank"]
+            = image_tag 'logos/jquery.png'
+          a[href="https://www.apple.com" target="_blank"]
+            = image_tag 'logos/apple.png'
+
+      li[class="year"]
+        |2007
+
+      li[class="event"]
+        h3[class="heading"]
+          = link_to("Northwestern University","http://www.scs.northwestern.edu/")
+        h4[class="education"]
+          i[class="fa fa-book"]
+          |Economics of Trading Course
+        span[class="month"]
+          i[class="fa fa-calendar"]
+          |Completed 2007
+        span[class="location"]
+          i[class="fa fa-map-marker"]
+          |Chicago, Illinois
+
+      li[class="event"]
+        h3[class="heading"]
+          = link_to("AT&T","https://www.att.com")
+        h4[class="position"]
+          i[class="fa fa-wrench"]
+          |Team Leader – Web Technology
+        span[class="month"]
+          i[class="fa fa-calendar"]
+          |August 2001 – September 30, 2007
+        span[class="location"]
+          i[class="fa fa-map-marker"]
+          |Chicago, Illinois
+
+        p
+          |Provided project leadership to five coldfusion developers across the following topics: ui ux, cost estimates, client timetables, ranking priorities, status reporting, client and project team coordination, training, and participating in annual performance reviews.
+        p
+          |Lead engineer and 13 state representative for the manager’s one stop tool, MOST. This extensive dashboard application utilized push and pull mechanisms that published live productivity measurements to over 10,000 management and non-management employees. Productivity improvements, costs reductions, and increased overall performance management at all levels of the organization were directly linked to this product.  At its peak configuration the database datafile had surpassed eighty gigabytes and consumed data from over sixty dts packages, extracting data from mainframes to excel spreadsheets.
+        p
+          |Designed and developed the customer service bureau (csb) and network dispatch center (ndc) online handbook and back-end administrative systems. Utilized by more than 1500 employees, this software standardized process delivery, reduced costs, and minimized overall call time saving the company money while increasing customer service.
+        p
+          |Designed and developed the eknowledgenow online learning management system used by trainers to schedule, track, and administer online courses for over 1000 non-management employees in the customer service bureau organization. Faster delivery of corporate training content yielded reduced call times, and increased employee and customer satisfaction.
+        p
+          |Creator of the business and residence revenue always grows with service, BRRAGS application that housed customer driven evaluation data that analysts reviewed and classified to determine where to target performance management of employees or correct existing processes that may not be working up to expectations. Data collected was used to improve customer evaluation scores, yielding better overall customer service.
+
+        figure
+          a[href="https://www.microsoft.com/en-us/sqlserver/" target="_blank"]
+            = image_tag 'logos/sqlserver.png'
+          a[href="https://www.adobe.com/products/coldfusion/" target="_blank"]
+            = image_tag 'logos/coldfusion.png'
+          a[href="https://www.fusebox.org" target="_blank"]
+            = image_tag 'logos/fusebox.png'
+          a[href="https://subversion.apache.org" target="_blank"]
+            = image_tag 'logos/svn.png'
+          a[href="https://www.microsoft.com" target="_blank"]
+            = image_tag 'logos/msft.png'
+
+      li[class="event"]
+        h3[class="heading"]
+          = link_to("Keller Graduate School of Management","http://www.keller.edu/")
+        h4[class="education"]
+          i[class="fa fa-book"]
+          |Master of Business Administration
+        span[class="month"]
+          i[class="fa fa-calendar"]
+          |Graduated 2005
+        span[class="location"]
+          i[class="fa fa-map-marker"]
+          |Chicago, Illinois
+
+      li[class="year"]
+        |2001
+
+      li[class="event"]
+        h3[class="heading"]
+          = link_to("Illinois College","http://www.ic.edu/")
+        h4[class="education"]
+          i[class="fa fa-book"]
+          |B.S. in Management Information System
+        span[class="month"]
+          i[class="fa fa-calendar"]
+          |Graduated 2001
+        span[class="location"]
+          i[class="fa fa-map-marker"]
+          |Jacksonville, Illinois

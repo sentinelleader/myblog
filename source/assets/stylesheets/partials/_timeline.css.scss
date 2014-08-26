@@ -7,7 +7,7 @@
 	position: relative;
 	padding: 0px;
 	list-style-type: none;
-	background-image: image-url('20140413-Vertical-Line.png');
+	background-image: image-url('resume/20140413-Vertical-Line.png');
 	background-repeat: repeat-y;
 	background-position: 50% 0;
 
@@ -64,6 +64,10 @@
 			margin-bottom: 5px;
 			font-size: 1em;
 		}
+		a:hover{
+			text-decoration: none;
+			border-bottom: none;
+		}
 	}
 	.event .position, .event .education {
 		margin-top: 0px;
@@ -98,6 +102,7 @@
 	.event img {
 		margin-top: 10px;
 		max-width: 100%;
+		padding-right: 5px;
 	}
 	.event:hover {
 		background: $app-color-white;
