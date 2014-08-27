@@ -7,12 +7,12 @@
 	position: relative;
 	padding: 0px;
 	list-style-type: none;
-	background-image: image-url('resume/20140413-Vertical-Line.png');
+	background-image: image-url('20140826-Vertical-Line.png');
 	background-repeat: repeat-y;
 	background-position: 50% 0;
 
 	.year {
-		background: $app-color-black;
+		background: $app-color-red-4;
 		font-size: 1em;
 		line-height: 4;
 		color: $app-color-white;
@@ -20,7 +20,6 @@
 		margin: 1em auto;
 		text-align: center;
 		font-weight: bolder;
-		border-radius: 50%;
 		margin-top: 0;
 		margin-bottom: 0;
 		clear: both;
@@ -52,7 +51,7 @@
 		background: white;
 		z-index: 15;
 		color: $app-color-black;
-		border: 2px solid $app-color-black;
+		border: 2px solid $app-color-red-4;
 		text-decoration: none;
 		-webkit-transition: background .15s linear;
 		-moz-transition: background .15s linear;
@@ -136,6 +135,7 @@
 	.event:nth-child(2n):after {
 		right: -5%;
 		left: auto;
+		margin-right: 2px;
 	}
 	@media (min-width: 992px) {
 		.timeline .year {
@@ -154,7 +154,7 @@
 	.event {
 		width: 100%;
 		background: $app-color-white;
-		border-color: $app-color-black;
+		border-color: $app-color-red-4;
 		text-align: left;
 		margin: 50px 0;
 		color: $app-color-black;
@@ -179,11 +179,11 @@
 		border-radius: 0;
 		width: 15px;
 		height: 3px;
-		border-color: $app-color-black;
+		border-color: $app-color-red-4;
 		border-width: 3px;
 		background: $app-color-white;
 		top: 1.8em;
-		left: -29px;
+		left: -28px;
 	}
 	@media (min-width: 600px) {
 		.event:nth-child(2n) {
@@ -200,7 +200,7 @@
 		text-align: left;
 		margin-bottom: 0;
 	}
-	.event .position .fa-wrench, .event .position .fa-calendar, .event .education .fa-book, .event .position .fa-map-marker {
+	.event .position .fa-gear, .event .position .fa-wrench, .event .position .fa-calendar, .event .education .fa-book, .event .position .fa-map-marker {
 		margin-right: 5px;
 		padding: 0px;
 	}
