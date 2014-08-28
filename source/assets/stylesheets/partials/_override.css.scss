@@ -157,7 +157,7 @@ select, input[type="text"] {
 		@include background($imgpath:"hexellence.png", $position: top left, $repeat: repeat);
 		.g-html{
 			background-color: white;
-			padding: 25px;
+			padding: 55px 50px;
 		}
 		.g-html blockquote{
 			padding-bottom: 0;
@@ -185,7 +185,7 @@ select, input[type="text"] {
 
 
 	.resume{
-		@include background($imgpath:"zwartevilt.png", $position: top left, $repeat: repeat);
+		@include background($imgpath:"dark_wood.png", $position: top left, $repeat: repeat);
 		padding-top: 50px;
 		padding-bottom: 50px;
 		h1{
@@ -339,7 +339,7 @@ select, input[type="text"] {
 @media screen and (-webkit-min-device-pixel-ratio: 2){
 	.career {
 		.resume{
-			@include background($imgpath:"zwartevilt_@2X.jpg", $position: top left, $repeat: repeat);
+			@include background($imgpath:"dark_wood_@2X.jpg", $position: top left, $repeat: repeat);
 		}
 		.about{
 			@include background($imgpath:"hexellence_@2X.png", $position: top left, $repeat: repeat);
