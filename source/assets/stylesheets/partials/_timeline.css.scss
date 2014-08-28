@@ -27,6 +27,9 @@
 	.year:first-of-type {
 		margin-top: 0;
 	}
+	.start{
+		height: 5px;
+	}
 	.event > p {
 		margin-top: 5px;
 		margin-bottom: 5px;
@@ -74,9 +77,13 @@
 		line-height: 1em;
 		font-weight: bold;
 	}
-	.event .location, .event .month{
+	.event .location, .event .location-remote, .event .month{
 		color: $app-color-light-grey;
 		font-size: 1em;
+		display: block;
+	}
+	.event .location-remote{
+		padding-top: 5px;
 	}
 	.event .month,.event .location.event .education, .contacts .social .social-icons a {
 		margin-bottom: 7px;

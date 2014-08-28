@@ -123,6 +123,14 @@ select, input[type="text"] {
 		}
 		.fa-quote-left{padding-right: 5px;}
 		.fa-quote-right{padding-left: 5px;}
+		.team-member-data-wrapper{
+			padding: 20px 25px;
+			@include transparent($color: $app-color-black, $alpha: .5);
+  		@include box-shadow($blur: 3em, $color: rgba(0, 0, 0, .6));
+		}
+		.w-socials-h{
+			padding-top: 15px;
+		}
 		.team-member-avatar{
 			max-width: 500px;
 			margin-right: 5px;
@@ -251,6 +259,7 @@ select, input[type="text"] {
 
 
 	.contact{
+		padding-bottom: 25px;
 		.g-html blockquote{
 			padding-bottom: 0;
 			margin-bottom: 0;
@@ -312,8 +321,13 @@ select, input[type="text"] {
 
 }
 @media only screen and (max-width: 479px) {
-	.career .avatar h1 {
+	.career .about p, .career .contact h1 {
+		font-size: 1em;
+	}
+	.career .avatar h1, .career .about h1, .career .about h1, .career .contact h1 {
 		font-size: 2.5em;
+	}
+	.career .avatar h1 {
 		text-align: center;
 	}
 	.career .avatar p {
@@ -326,6 +340,7 @@ select, input[type="text"] {
 			.w-socials-list {
 				margin: auto auto;
 				padding: 10px;
+				padding-left: 30px;
 			}
 		}
 	}
@@ -339,7 +354,7 @@ select, input[type="text"] {
 @media screen and (-webkit-min-device-pixel-ratio: 2){
 	.career {
 		.resume{
-			@include background($imgpath:"dark_wood_@2X.jpg", $position: top left, $repeat: repeat);
+			@include background($imgpath:"dark_wood_@2X.png", $position: top left, $repeat: repeat);
 		}
 		.about{
 			@include background($imgpath:"hexellence_@2X.png", $position: top left, $repeat: repeat);
