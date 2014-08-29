@@ -43,6 +43,7 @@ activate :deploy do |deploy|
   deploy.branch       = 'gh-pages'
 end
 
+Time.zone = "Pacific Time (US & Canada)"
 
 # Globla Variables
 set :site_title, 'NoConformity'
