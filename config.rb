@@ -43,6 +43,13 @@ activate :deploy do |deploy|
   deploy.branch       = 'gh-pages'
 end
 
+activate :blog do |b|
+  b.sources = "posts/{year}{month}{day}-{title}.html"
+  b.permalink = "{year}/{month}/{day}/{title}/index.html"
+  b.new_article_template = "lib/templates/new_article.markdown"
+  b.layout = "layout-blog"
+end
+
 Time.zone = "Pacific Time (US & Canada)"
 
 # Globla Variables
