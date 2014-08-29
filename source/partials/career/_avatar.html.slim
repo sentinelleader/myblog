@@ -8,12 +8,11 @@ div[class="g-cols"]
   div[class="one-half"]
     div[class="w-team-member team-member-data"]
       div[class="team-member-data-wrapper"]
-        h1[class=""]
-          = site_author
-        p[class=""]
-          i[class="fa fa-quote-left"]
-          = site_slogan
-          i[class="fa fa-quote-right"]
 
-      div[class="w-socials size_normal"]
-        = partial "components/social"
+        h1[class="text-emphasis"]
+          = site_author
+        p
+          = site_slogan
+
+        div[class="w-socials size_normal"]
+          = partial "components/social"

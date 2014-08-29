@@ -92,9 +92,6 @@ GEM
     middleman-minify-html (3.4.0)
       htmlcompressor (~> 0.1.0)
       middleman-core (>= 3.2)
-    middleman-slim (0.1.2)
-      middleman (~> 3.2)
-      slim (~> 2.0)
     middleman-sprockets (3.3.3)
       middleman-core (>= 3.2)
       sprockets (~> 2.2)
@@ -161,8 +158,8 @@ DEPENDENCIES
   middleman-imageoptim (~> 0.1.4)
   middleman-livereload (~> 3.1.0)
   middleman-minify-html
-  middleman-slim
   rails-assets-jquery
   rake
+  slim
   tzinfo-data
   wdm (~> 0.1.0)

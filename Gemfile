@@ -4,7 +4,7 @@ ruby '2.1.0'
 
 gem 'middleman', '~>3.3.3'
 gem 'middleman-deploy'
-gem 'middleman-slim'
+gem 'slim'
 gem 'font-awesome-middleman'
 gem 'middleman-minify-html'
 gem 'middleman-imageoptim', '~> 0.1.4'

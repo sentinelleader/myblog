@@ -114,8 +114,13 @@ select, input[type="text"] {
 		h1{
 			font-size:3.5em;
 			@include force-upper-case;
+			margin-bottom: 10px;
 		}
-		p{font-size:2em;line-height: 1.4;}
+		p{
+			font-size:2em;
+			line-height: 1.4;
+			margin-bottom: 5px;
+		}
 		.fa-quote-left, .fa-quote-right{
 			vertical-align: super;
 			margin: 5px;

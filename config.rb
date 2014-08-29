@@ -1,5 +1,9 @@
 require "lib/helpers/menu_helpers"
 require "lib/helpers/view_helpers"
+require 'slim'
+
+Slim::Engine.disable_option_validator!
+
 helpers MenuHelpers
 helpers ViewHelpers
 
