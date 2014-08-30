@@ -17,5 +17,15 @@ div[class="l-canvas type_wide col_contside headerpos_fixed headertype_extended"]
                     div[class="w-blogpost-content"]
                       h1[class="w-blogpost-title force-capitalize"]
                         = current_article.title
-                      div[class="w-blogpost-text post-content"]
-                        == yield
+
+                    div[class="w-blogpost-meta"]
+                      div[class="w-blogpost-meta-date"]
+                        i[class="fa fa-clock-o"]
+                          = post_date(current_article)
+
+                    div[class="w-blogpost-text post-content"]
+                      == yield
+
+            div[class="l-sidebar at_right"]
+              div[class="l-sidebar-h"]
+                |TEST

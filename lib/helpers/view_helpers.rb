@@ -4,6 +4,10 @@ module ViewHelpers
     blog.articles.sort_by(&:date).last.url
   end
 
+  def post_date(article)
+    article.date.strftime("%B #{current_article.date.day.ordinalize}, %Y")
+  end
+
   def blockquote(content,author,source=nil,source_link=nil)
     data = '
       <blockquote>

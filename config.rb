@@ -1,10 +1,12 @@
 require "lib/helpers/menu_helpers"
 require "lib/helpers/view_helpers"
+require "lib/helpers/site_helpers"
 require 'slim'
 
 Slim::Engine.disable_option_validator!
 
 helpers MenuHelpers
+helpers SiteHelpers
 helpers ViewHelpers
 
 set :js_dir, 'assets/javascripts'
