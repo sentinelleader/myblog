@@ -1,5 +1,9 @@
 module ViewHelpers
 
+  def latest_post_url
+    blog.articles.sort_by(&:date).last.url
+  end
+
   def blockquote(content,author,source=nil,source_link=nil)
     data = '
       <blockquote>

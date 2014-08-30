@@ -4,6 +4,7 @@ ruby '2.1.0'
 
 gem 'middleman', '~>3.3.3'
 gem 'middleman-deploy'
+gem 'middleman-pry'
 gem 'middleman-blog'
 gem 'slim'
 gem 'font-awesome-middleman'
