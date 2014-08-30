@@ -18,13 +18,17 @@ div[class="l-canvas type_wide col_contside headerpos_fixed headertype_extended"]
                       h1[class="w-blogpost-title force-capitalize"]
                         = current_article.title
 
-                    div[class="w-blogpost-meta"]
-                      div[class="w-blogpost-meta-date"]
-                        i[class="fa fa-clock-o"]
-                          = post_date(current_article)
+                      div[class="w-blogpost-meta"]
+                        div[class="w-blogpost-meta-date"]
+                          i[class="fa fa-clock-o"]
+                            = post_date(current_article)
 
-                    div[class="w-blogpost-text post-content"]
-                      == yield
+                      div[class="w-blogpost-text post-content"]
+                        == yield
+
+                  /=share
+                  /=tags
+                /=related
 
             div[class="l-sidebar at_right"]
               div[class="l-sidebar-h"]
