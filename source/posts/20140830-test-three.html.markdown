@@ -4,8 +4,8 @@ title: Test Three
 description: Test Three
 image_thumbnail_500x320:
 image_thumbnail_500x500:
-category:
-tags:
+category: awesome3
+tags: bust1, bust5, bust2
 ---
 <p>
 TBD
