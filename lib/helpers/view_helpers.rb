@@ -22,7 +22,7 @@ module ViewHelpers
   def blockquote(content,author,source=nil,source_link=nil)
     data = '
       <blockquote>
-      <p>'+content+'</p>
+      <p>'+content.html_safe+'</p>
       <footer>
         <strong>'+author+'</strong>'
 
