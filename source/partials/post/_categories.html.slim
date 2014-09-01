@@ -1,0 +1,5 @@
+- if current_article.metadata[:page]['category']
+  div[class="w-blogpost-meta-tags"]
+    i[class="fa fa-folder-open"]
+    a[class="w-tags-item-link force-capitalize" href="/"]
+      = current_article.metadata[:page]['category']

@@ -21,19 +21,22 @@ div[class="l-canvas type_wide col_contside headerpos_fixed headertype_extended"]
                       div[class="w-blogpost-meta"]
                         div[class="w-blogpost-meta-date"]
                           i[class="fa fa-clock-o"]
-                            = post_date(current_article)
+                          = post_date(current_article)
+
+                        = partial "post/categories"
 
                       div[class="w-blogpost-text post-content"]
                         == yield
 
-                  = partial "components/post_share"
-                  
-                  /=tags
+                  = partial "post/share"
+                  = partial "post/tags"
+
                 /=related
 
             div[class="l-sidebar at_right"]
               div[class="l-sidebar-h"]
-                |TEST
+                = partial "components/categories"
+                = partial "components/tags"
 
 = partial "components/footer"
 = partial "components/scripts"

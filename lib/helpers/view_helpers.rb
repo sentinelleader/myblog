@@ -8,6 +8,17 @@ module ViewHelpers
     article.date.strftime("%B #{current_article.date.day.ordinalize}, %Y")
   end
 
+  def build_categories(articles)
+    categories = []
+    articles.each do |article|
+      category = article.metadata[:page]['category']
+      unless categories.include? category
+        categories.push(category)
+      end
+    end
+    return categories
+  end
+
   def blockquote(content,author,source=nil,source_link=nil)
     data = '
       <blockquote>

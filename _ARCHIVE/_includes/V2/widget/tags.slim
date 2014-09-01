@@ -1,18 +1,52 @@
 |{% capture site_tag_count %}{{ site.tags | size }}{% endcapture %}
 |{% if site_tag_count != '0' %}
-|<div class="widget">
-|	<h4>Tags</h4>
-|	<div class="w-tags layout_block">
-|		<div class="w-tags-h">
-|			<div class="w-tags-list">
-|				{% for tag in site.tags %}
-|					<div class="w-tags-item">
-|						<a class="w-tags-item-link force-capitalize" href="{% tag_url {{ tag[0] }} %}">{{ tag[0] }}</a>
-|						<span class="w-tags-item-separator">,</span>
-|					</div>
-|				{% endfor %}
-|			</div>
-|		</div>
-|	</div>
-|</div>
+<div class="widget">
+	<h4>Tags</h4>
+	<div class="w-tags layout_block">
+		<div class="w-tags-h">
+			<div class="w-tags-list">
+				{% for tag in site.tags %}
+					<div class="w-tags-item">
+						<a class="w-tags-item-link force-capitalize" href="{% tag_url {{ tag[0] }} %}">{{ tag[0] }}</a>
+						<span class="w-tags-item-separator">,</span>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
 |{% endif %}
+
+
+  div[class="w-tags layout_block title_atleft"]
+    div[class="w-tags-h"]
+      div[class="w-tags-title"]
+        div[class="w-tags-title-h"]
+          |Tags:
+      div[class="w-tags-list"]
+        - current_article.tags.each do | tag |
+          div[class="w-tags-item"]
+            a[class="w-tags-item-link force-capitalize" href="/"]
+              = tag
+            span[class="w-tags-item-separator"]
+              |,
+
+
+<% blog.tags.sort.each do |tag, articles| %>
+  <h2>Posts tagged '<%= tag.capitalize %>'</h2>
+  <ul>
+  <% articles.sort_by(&:title).each do |article| %>
+      <li><%= link_to article.title, article %></li>
+  <% end %>
+  </ul>
+<% end %>
+
+
+<% blog.tags.sort.each do |tag, articles| %>
+  <h2>Posts tagged '<%= tag.capitalize %>'</h2>
+  <ul>
+  <% articles.sort_by(&:title).each do |article| %>
+      <li><%= link_to article.title, article %></li>
+  <% end %>
+  </ul>
+<% end %>

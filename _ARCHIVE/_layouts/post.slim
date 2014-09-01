@@ -22,22 +22,22 @@ div[class="l-canvas type_wide col_contside headerpos_fixed headertype_extended"]
 													i[class="fa fa-clock-o"]
 													/ | {% slim V2/page/date.slim %}
 												/ -----------------------------------------------------------------------------------------------
-												| {% slim V2/page/categories.slim %}
+												/ | {% slim V2/page/categories.slim %}
 											/ -----------------------------------------------------------------------------------------------
 											div[class="w-blogpost-text post-content"]
 												/ |{{content}}
 										/ -----------------------------------------------------------------------------------------------
 										/ | {% include V2/page/social_share.html %}
-										| {% slim V2/page/tags.slim %}
+										/ | {% slim V2/page/tags.slim %}
 								/ -----------------------------------------------------------------------------------------------
 								| {% slim V2/post/related_posts.slim %}
 						/ -----------------------------------------------------------------------------------------------
 						div[class="l-sidebar at_right"]
 							div[class="l-sidebar-h"]
-								| {% slim V2/widget/categories.slim %}
+								/ | {% slim V2/widget/categories.slim %}
 								| {% include V2/widget/archive_monthly.html %}
-								| {% slim V2/widget/tags.slim %}
-								| {% slim V2/widget/codeschool.slim %}
+								/ | {% slim V2/widget/tags.slim %}
+								/ | {% slim V2/widget/codeschool.slim %}
 								| {% slim V2/widget/recent_posts.slim %}
 
 / -----------------------------------------------------------------------------------------------

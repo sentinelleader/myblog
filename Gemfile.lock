@@ -175,6 +175,7 @@ DEPENDENCIES
   middleman-livereload (~> 3.1.0)
   middleman-minify-html
   middleman-pry
+  pry
   rails-assets-jquery
   rake
   slim

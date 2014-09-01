@@ -1,0 +1,13 @@
+- categories = build_categories(blog.articles)
+- if categories.size > 0
+  div[class="widget"]
+    h4
+      |Categories
+    div[class="w-tags layout_block"]
+      div[class="w-tags-h"]
+        div[class="w-tags-list"]
+          - categories.each do |category|
+            div[class="w-links-item"]
+              a[class="w-links-anchor" href="/"]
+                span[class="w-links-anchor-title force-capitalize"]
+                  = category

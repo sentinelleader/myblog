@@ -1,0 +1,13 @@
+- if blog.tags.size > 0
+  div[class="widget"]
+    h4
+      |Tags
+    div[class="w-tags layout_block"]
+      div[class="w-tags-h"]
+        div[class="w-tags-list"]
+          - blog.tags.sort.each do |tag, articles|
+            div[class="w-tags-item"]
+              a[class="w-tags-item-link force-capitalize" href="/"]
+                = tag
+              span[class="w-tags-item-separator"]
+                |,
