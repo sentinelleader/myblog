@@ -5,22 +5,22 @@ div[class="l-footer"]
 			div[class="l-subfooter-h g-cols"]
 				div[class="one-third"]
 					div[class="widget"]
-						| {% slim V2/footer/about_me.slim %}
+						/ | {% slim V2/footer/about_me.slim %}
 					div[class="widget"]
 						div[class="w-socials size_normal"]
-							| {% slim V2/social_links.slim %}
+							/ | {% slim V2/social_links.slim %}
 				div[class="two-thirds"]
 					div[class="widget"]
-						| {% slim V2/footer/disclaimer.slim %}
+						/ | {% slim V2/footer/disclaimer.slim %}
 		/ subfooter: bottom
 		div[class="l-subfooter at_bottom bkgd-texture-two"]
 			div[class="l-subfooter-h i-cf"]
 				div[class="w-copyright"]
-					|&copy; {{ site.time | date: '%Y' }} {{ site.owner.author}}
+					/ |&copy; {{ site.time | date: '%Y' }} {{ site.owner.author}}
 
-				| {% slim V2/footer/navigation.slim %}
+				/ | {% slim V2/footer/navigation.slim %}
 
 a[class="w-toplink" href="#"]
 	i[class="fa fa-angle-up"]
 
-| {% slim V2/footer/scripts.slim %}
+/ | {% slim V2/footer/scripts.slim %}

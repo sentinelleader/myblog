@@ -1,0 +1,45 @@
+div[class="l-footer"]
+  div[class="l-footer-h"]
+    / subfooter: top
+    div[class="l-subfooter at_top bkgd-texture-one"]
+      div[class="l-subfooter-h g-cols"]
+
+        div[class="one-third"]
+          div[class="widget"]
+            = partial "components/about_me"
+
+          div[class="widget"]
+            div[class="w-socials size_normal"]
+              = partial "components/social"
+
+        div[class="two-thirds"]
+          div[class="widget"]
+            = partial "components/disclaimer"
+
+    / subfooter: bottom
+    div[class="l-subfooter at_bottom bkgd-texture-two"]
+
+      div[class="l-subfooter-h i-cf"]
+        div[class="w-copyright"]
+          |&copy;
+          = Time.now.year
+          |&nbsp;
+          = site_author
+
+        nav[class="w-nav layout_hor"]
+          ul[class="w-nav-list level_1"]
+            li[class="w-nav-item level_1 active"]
+              a[class="w-nav-anchor level_1" href="/"]
+                |Home
+            li[class="w-nav-item level_1"]
+              a[class="w-nav-anchor level_1" href="#{latest_post_url}"]
+                |Blog
+            li[class="w-nav-item level_1"]
+              a[class="w-nav-anchor level_1" href="/about-me/"]
+                |About
+            li[class="w-nav-item level_1"]
+              a[class="w-nav-anchor level_1" href="/credits/"]
+                |Credits
+
+a[class="w-toplink" href="#"]
+  i[class="fa fa-angle-up"]
