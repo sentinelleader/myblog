@@ -13,7 +13,6 @@ gem 'middleman-minify-html'
 gem 'middleman-imageoptim', '~> 0.1.4'
 gem 'rake'
 gem 'highline'
-
 gem 'rails-assets-jquery'
 
 # Live-reloading plugin

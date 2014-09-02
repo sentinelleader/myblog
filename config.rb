@@ -48,8 +48,9 @@ end
 activate :blog do |b|
   b.sources = "posts/{year}{month}{day}-{title}.html"
   b.permalink = "{year}/{month}/{day}/{title}/index.html"
-  b.new_article_template = "lib/templates/new_article.markdown"
+  b.new_article_template = "lib/templates/article.html.erb"
   b.layout = "layout-blog"
+  b.default_extension = ".slim"
 end
 
 Time.zone = "Pacific Time (US & Canada)"
