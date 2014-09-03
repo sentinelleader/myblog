@@ -12,6 +12,10 @@ module ViewHelpers
     article.body.split(/<!--more-->/).first
   end
 
+  def post_image(img)
+    image_tag("posts/#{img}")
+  end
+
   def post_vimeo(id)
     %(<iframe
       width="500"
