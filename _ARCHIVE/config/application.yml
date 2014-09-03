@@ -7,17 +7,17 @@ pygments:    true
 markdown:    kramdown
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: /:year/:month/:day/:title/
+# permalink: /:year/:month/:day/:title/
 relative_permalinks: false
 
 # Jekyll Configurations : Include|Exclude Files
 destination: _site
 plugins: _plugins
 archive_dir: "archive"
-category_dir: "category"
-category_dir_list: "categories"
-tag_dir: "tag"
-tag_dir_list: "tags"
+# category_dir: "category"
+# category_dir_list: "categories"
+# tag_dir: "tag"
+# tag_dir_list: "tags"
 relative_permalinks: false
 include: ["index.html","_pages"]
 exclude: [".bundle","Guardfile", "Gemfile", "Gemfile.lock", "README.md", "readme.md", "S3_website.yml", "lib", ".DS_Store", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]

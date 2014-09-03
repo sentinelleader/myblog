@@ -52,13 +52,13 @@ nav[class="w-nav layout_hor"]
         = build_menu_item("Writing")
 
     li[class="w-nav-item level_1"]
-      a[class="w-nav-anchor level_1" href="/"]
+      a[class="w-nav-anchor level_1" href="#{category_path('startups')}"]
         span[class="w-nav-icon"]
           i[class="fa fa-pencil"]
         = build_menu_item("Startups")
 
     li[class="w-nav-item level_1 has_sublevel"]
-      a[class="w-nav-anchor level_1" href="/"]
+      a[class="w-nav-anchor level_1" href="#{category_path('code')}"]
         span[class="w-nav-icon"]
           i[class="fa fa-pencil"]
         = build_menu_item("Code")
@@ -69,7 +69,7 @@ nav[class="w-nav layout_hor"]
             = build_menu_item("My Configurations")
 
         li[class="w-nav-item level_2 "]
-          a[class="w-nav-anchor level_2" href="/oss/"]
+          a[class="w-nav-anchor level_2" href="/"]
             = build_menu_item("Open Source")
 
         li[class="w-nav-item level_2 "]
@@ -77,14 +77,14 @@ nav[class="w-nav layout_hor"]
             = build_menu_item("Conferences")
 
     li[class="w-nav-item level_1 has_sublevel"]
-      a[class="w-nav-anchor level_1" href="/"]
+      a[class="w-nav-anchor level_1" href="#{category_path('life')}"]
         span[class="w-nav-icon"]
           i[class="fa fa-pencil"]
         = build_menu_item("Life")
 
       ul[class="w-nav-list level_2"]
         li[class="w-nav-item level_2 "]
-          a[class="w-nav-anchor level_2" href="/artwork/"]
+          a[class="w-nav-anchor level_2" href="/"]
             = build_menu_item("Artwork")
 
         li[class="w-nav-item level_2 "]

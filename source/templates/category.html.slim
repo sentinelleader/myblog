@@ -4,5 +4,5 @@ layout: layout-archive
 div[class="w-blog imgpos_atleft meta_tags comments"]
   div[class="w-blog-h"]
     div[class="w-blog-list"]
-      - blog.articles.select{|a| a.tags.include?(tagname)}.each do |article|
+      - blog.articles.select {|a| a.data.category == category }.each do |article|
         = partial "components/archive_content", locals: {article: article}

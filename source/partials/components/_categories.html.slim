@@ -8,6 +8,6 @@
         div[class="w-tags-list"]
           - categories.each do |category|
             div[class="w-links-item"]
-              a[class="w-links-anchor" href="/"]
+              a[class="w-links-anchor" href="#{category_path(category)}"]
                 span[class="w-links-anchor-title force-capitalize"]
                   = category

@@ -37,6 +37,12 @@ activate :blog do |b|
   b.new_article_template = "lib/templates/article.html.erb"
   b.layout = "layout-blog"
   b.default_extension = ".slim"
+  b.custom_collections = {
+    category: {
+      link: '/categories/{category}/index.html',
+      template: 'templates/category.html'
+    }
+  }
 end
 
 configure :build do
