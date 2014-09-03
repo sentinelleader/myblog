@@ -5,7 +5,11 @@ module ViewHelpers
   end
 
   def post_date(article)
-    article.date.strftime("%B #{current_article.date.day.ordinalize}, %Y")
+    article.date.strftime("%B #{article.date.day.ordinalize}, %Y")
+  end
+
+  def post_short(article)
+    article.body.split(/<!--more-->/).first
   end
 
   def build_categories(articles)

@@ -1,0 +1,40 @@
+---
+layout: layout-archive
+---
+div[class="w-blog imgpos_atleft meta_tagscomments"]
+  div[class="w-blog-h"]
+    div[class="w-blog-list"]
+      - blog.articles.select{|a| a.tags.include?(tagname)}.each do |article|
+        div[class="w-blog-entry format-standard"]
+          div[class="w-blog-entry-h"]
+            a[class="w-blog-entry-link" href="#{article.url}"]
+              span[class="w-blog-entry-preview"]
+                - if article.metadata[:page]['image_thumbnail_500x500']
+                  = image_tag("posts_500x500/#{article.metadata[:page]['image_thumbnail_500x500']}")
+                - else
+                  = image_tag("placeholder/500x500.gif")
+
+              h3[class="w-blog-entry-title"]
+                span[class="w-blog-entry-title-h"]
+                  = article.title
+
+            div[class="w-blog-entry-body"]
+              div[class="w-blog-entry-meta"]
+                div[class="w-blogpost-meta-date"]
+                  i[class="fa fa-clock-o"]
+                  = post_date(article)
+
+                div[class="w-blog-entry-meta-tags"]
+                  i[class="fa fa-tags"]
+                  - article.tags.each do | tag |
+                    a[href="#{tag_path(tag)}" class="force-capitalize"]
+                      = tag
+                    span[class="w-tags-item-separator"]
+                      |,&nbsp;
+
+              div[class="w-blog-entry-short"]
+                = post_short(article)
+
+              a[class="w-blog-entry-more g-btn type_default outlined size_small" href="#{article.url}"]
+                span
+                  |Read More

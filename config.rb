@@ -19,6 +19,26 @@ set :partials_dir, 'partials'
 # set :helpers_dir
 # activate :relative_assets
 
+configure :development do
+  activate :livereload, apply_js_live: false
+end
+
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.method       = :git
+  deploy.branch       = 'gh-pages'
+end
+
+activate :blog do |b|
+  b.sources = "posts/{year}{month}{day}-{title}.html"
+  b.permalink = "{year}/{month}/{day}/{title}/index.html"
+  b.taglink = "tags/{tag}/index.html"
+  b.tag_template = "templates/tag.html"
+  b.new_article_template = "lib/templates/article.html.erb"
+  b.layout = "layout-blog"
+  b.default_extension = ".slim"
+end
+
 configure :build do
   # activate :minify_css
   # activate :minify_javascript
@@ -33,24 +53,6 @@ end
 
 after_build do
   # FileUtils.rm_rf ["build/partials"]
-end
-
-configure :development do
-  activate :livereload, apply_js_live: false
-end
-
-activate :deploy do |deploy|
-  deploy.build_before = true
-  deploy.method       = :git
-  deploy.branch       = 'gh-pages'
-end
-
-activate :blog do |b|
-  b.sources = "posts/{year}{month}{day}-{title}.html"
-  b.permalink = "{year}/{month}/{day}/{title}/index.html"
-  b.new_article_template = "lib/templates/article.html.erb"
-  b.layout = "layout-blog"
-  b.default_extension = ".slim"
 end
 
 Time.zone = "Pacific Time (US & Canada)"

@@ -1,0 +1,28 @@
+= partial "components/wrapper"
+
+div[class="l-canvas type_wide col_contside headerpos_fixed headertype_extended"]
+  div[class="l-canvas-h"]
+    = partial "components/navigation"
+
+    div[class="l-main bkgd-texture-three"]
+      div[class="l-main-h"]
+
+        div[class="l-submain for_pagehead color_alternate bkgd-texture-two"]
+          div[class="l-submain-h g-html i-cf"]
+            div[class="w-pagehead force-capitalize bkgd-texture-two-color"]
+              h1
+                = tagname
+
+        div[class="l-submain"]
+          div[class="l-submain-h g-html i-cf"]
+            div[class="l-content"]
+              div[class="l-content-h"]
+                == yield
+
+            div[class="l-sidebar at_right"]
+              div[class="l-sidebar-h"]
+                = partial "components/categories"
+                = partial "components/tags"
+
+= partial "components/footer"
+= partial "components/scripts"
