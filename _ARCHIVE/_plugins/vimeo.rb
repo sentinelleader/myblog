@@ -18,3 +18,4 @@ module Jekyll
 end
 
 Liquid::Template.register_tag('vimeo', Jekyll::Vimeo)
+TEST
