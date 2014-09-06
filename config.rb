@@ -76,7 +76,7 @@ set :site_owner_twitter, 'chrishough'
 set :site_owner_instagram, 'chrishough'
 set :site_owner_github, 'chrishough'
 set :site_owner_configurations, 'https://github.com/chrishough/myconfigurations'
-set :site_owner_cv, 'https://github.com/chrishough/myresume'
+set :site_owner_cv, 'https://github.com/chrishough/myblog/tree/master/data/resume'
 
 set :browser_msft, '10'
 set :browser_google, '32'
