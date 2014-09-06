@@ -200,7 +200,7 @@ select, input[type="text"] {
 	}
 
 
-	.resume{
+	.career{
 		@include background($imgpath:"dark_wood.png", $position: top left, $repeat: repeat);
 		padding-top: 50px;
 		padding-bottom: 50px;
@@ -360,13 +360,11 @@ select, input[type="text"] {
 	}
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2){
-	.career {
-		.resume{
-			@include background($imgpath:"dark_wood_@2X.png", $position: top left, $repeat: repeat);
-		}
-		.about{
-			@include background($imgpath:"hexellence_@2X.png", $position: top left, $repeat: repeat);
-		}
+	.career{
+		@include background($imgpath:"dark_wood_@2X.png", $position: top left, $repeat: repeat);
+	}
+	.about{
+		@include background($imgpath:"hexellence_@2X.png", $position: top left, $repeat: repeat);
 	}
 	.bkgd-texture-one{
 		@include background($imgpath:"skewed_print_@2X.png", $position: top left, $repeat: repeat);

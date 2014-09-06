@@ -7,9 +7,10 @@ div[class="w-blog-entry format-standard"]
           = image_tag("posts_500x500/#{article.metadata[:page]['image_thumbnail_500x500']}")
         - else
           = image_tag("placeholder/500x500.gif")
-
-      h3[class="w-blog-entry-title"]
-        span[class="w-blog-entry-title-h"]
+          
+    h3[class="w-blog-entry-title"]
+      span[class="w-blog-entry-title-h"]
+        a[class="w-blog-entry-link" href="#{article.url}"]
           = article.title
 
     div[class="w-blog-entry-body"]

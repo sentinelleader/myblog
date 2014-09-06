@@ -23,11 +23,11 @@ nav[class="w-nav layout_hor"]
 
         li[class="w-nav-item level_2 "]
           - if current_page.data.theme == "home"
-            a[class="w-nav-anchor level_2" href="javascript: scroll_to('resume');" target="_blank"]
-              = build_menu_item("Resume")
+            a[class="w-nav-anchor level_2" href="javascript: scroll_to('career');" target="_blank"]
+              = build_menu_item("Career")
           - else
-            a[class="w-nav-anchor level_2" href="/#resume"]
-              = build_menu_item("Resume")
+            a[class="w-nav-anchor level_2" href="/#career"]
+              = build_menu_item("Career")
 
         / li[class="w-nav-item level_2 "]
         /   - if current_page.data.theme == "home"
@@ -36,6 +36,10 @@ nav[class="w-nav layout_hor"]
         /   - else
         /     a[class="w-nav-anchor level_2" href="/#projects"]
         /       = build_menu_item("Projects")
+
+        li[class="w-nav-item level_2 "]
+          a[class="w-nav-anchor level_2" href="#{site_owner_cv}" target="_blank"]
+            = build_menu_item("Resume")
 
         li[class="w-nav-item level_2 "]
           - if current_page.data.theme == "home"
@@ -52,10 +56,10 @@ nav[class="w-nav layout_hor"]
         = build_menu_item("Writing")
 
     li[class="w-nav-item level_1"]
-      a[class="w-nav-anchor level_1" href="#{category_path('startups')}"]
+      a[class="w-nav-anchor level_1" href="#{category_path('business')}"]
         span[class="w-nav-icon"]
           i[class="fa fa-pencil"]
-        = build_menu_item("Startups")
+        = build_menu_item("Business")
 
     li[class="w-nav-item level_1 has_sublevel"]
       a[class="w-nav-anchor level_1" href="#{category_path('code')}"]
