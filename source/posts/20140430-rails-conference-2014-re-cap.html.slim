@@ -1,0 +1,98 @@
+---
+title: "Rails Conference 2014 Re-Cap"
+description: "Rails Conference 2014 Re-Cap"
+image_thumbnail_500x320: "RailsConference2014x320.jpg"
+image_thumbnail_500x500: "RailsConference2014x500.jpg"
+category: code
+tags: conference
+---
+p
+	|If you work in rails and do not attend Rails Conference, you’re doing it wrong!  This year the conference was in my home town of Chicago and I have to say with a few exceptions it exceeded my expectations.  The venue was in a perfect location downtown, close to outstanding bars and dining hotspots, and the hotel accommodations were quite nice. Overall it was awesome!
+
+/! more
+
+p
+	|I have always been a huge fan and advocate for attending conferences throughout my career.  As a developer, it’s rare you find yourself in a situation surrounded by all Apple MacBook Pros, fellow entrepreneurs who are building their dreams, and speakers who are the builders of the products you love to use.  Both the talks and the lobby chats were priceless,  I was able to chat with various owners of the gems we use everyday and form new relationships with like minded geeks all over the world.  While these opinions are pretty much a given, here are some thoughts on my favorite talks.
+p
+	|First, I thought all of the keynotes were amazing, including @dhh’s on #{link_to("TDD", "http://www.confreaks.com/videos/3315-railsconf-keynote-writing-software", target: "_blank")} and @farrahbostic's on #{link_to("What Happens to Everyone, When Everyone Learns to Code", "http://www.confreaks.com/videos/3336-railsconf-keynote-what-happens-to-everyone-when-everyone-learns-to-code", target: "_blank")}. If you have not watched it, I encourage you to do so.  After the video, prior to formulating your final opinion read “#{link_to("TDD is dead. Long live testing", "http://david.heinemeierhansson.com/2014/tdd-is-dead-long-live-testing.html", target: "_blank")}.”  Let me begin by stating I believe in testing, but I have always argued that the application code is more valuable then the testing code.  If you are adjusting your application code just to make sure tests are passing, that smells a little fishy to me.  Also, make sure your tests are actually testing what they should be, including your user interfaces, not merely status codes and other b.s. your users will not interact with.  It is better to have a well rounded test suite that takes longer to run, than one that merely fires off all green lights  but omits key tests. People who know me, know I am a huge fan of 37 Signals and their philosophies.  I was beyond stoked to get to meet their founders.
+div[class="w-gallery layout_tile size_m"]
+	div[class="w-gallery-h"]
+		div[class="w-gallery-tnails"]
+			div[class="w-gallery-tnails-h"]
+				a[class="w-gallery-tnail order_1" title="@Dhh" href="#{image_path('posts/RailsConference201437signals1.jpg')}"]
+					span[class="w-gallery-tnail-h"]
+						= post_image("RailsConference201437signals1.jpg")
+						span[class="w-gallery-tnail-title"]
+
+				a[class="w-gallery-tnail order_2" title="@jasonfried" href="#{image_path('posts/RailsConference201437signals2.jpg')}"]
+					span[class="w-gallery-tnail-h"]
+						= post_image("RailsConference201437signals2.jpg")
+						span[class="w-gallery-tnail-title"]
+
+				a[class="w-gallery-tnail order_3" title="Are you learning to program ruby?" href="#{image_path('posts/RailsConference2014jobs.jpg')}"]
+					span[class="w-gallery-tnail-h"]
+						= post_image("RailsConference2014jobs.jpg")
+						span[class="w-gallery-tnail-title"]
+
+p
+	|While I will save the details of the SOA architecture we are building at PlaceWise Media for a future post, I enjoyed each of the talks surrounding APIs and foundational service orientated architectures.  Unfortunately, they also forced me to rethink exactly how we are approaching our configuration.  The discussions on Rack-AMQP and Engines were fascinating.  Our current platform supports 8 total http based services of various sizes, however, after this conference and detailed discussions this week we are changing direction completely to harness engines from day 1.  I know this sounds a bit monolithic, but if you’re tasked with decoupling from legacy dead languages such as coldfusion, I would really consider engines.  It is far easier to control the bleeding at the model level.   Outside of the enterprise talks, the talk on building the api first sparked a chat with my co-founder that led to a significant deviation in our architecture.  Instead of using Rails for the front end and integrating various js libraries on top of it, we are going to break the setup into an ember.js application hosted on s3 and rails api hosted on heroku starting in v1.  Beyond SOAs, I attended a few talks where I was able to use new tricks that same day.
+p
+	|First, “Advanced aRel” encouraged me to rethink how I am interacting with the db.  Why write the t-sql directly? No shit right? It looks ugly, and I would rather just deal straight with object notation.  Every time I see a talk on Pry I have to attend.  The second major take away was presented in “Debugger Driven Development with Pry.”  Those of us using pry know about binding.pry but I never knew you could stack them in an application and navigate through them like breakpoints.  Also, you can run your rails application with “rescue rails s” and be immediately taken to the pry prompt if a bug occurs.  Some may say this time savings is trivial, but I disagree.  Anything we do to speed up our workflows saves us precious, limited time, especially over the course of a year.  Outside of just pure tech, the conference covered numerous management techniques and psychological challenges, including imposter syndrome.
+p
+	|“#{link_to("You Are Not An Impostor", "https://speakerdeck.com/nmeans/you-are-not-an-impostor", target: "_blank")}” was a session that hit too close to home.  I grew up with a father who was a strict perfectionist and sadly I have internalized many of the phrases he used to say to me.  This in turn bleeds over into nearly everything I take on.  I never feel like something is built correctly, I always find issues with things I develop, and I am never satisfied with my performance.  In fact, I always feel like I am going to get fired.  Over the years I have found many coping mechanisms to deal with these feelings, but it will be a life long struggle.  Yes, I will be writing about this more this year, and I encourage you to take the #{link_to("Clance Impostor Phenomenon Test", "http://impostortest.nickol.as/", target: "_blank")}.  I have already stated how awesome this conference was, but I want to add a few more things.  If you have not traveled to Chicago, I hope these following pictures not only get you hungry right now, but they encourage a visit.  The tech scene is blowing up there, the food will get you stuffed, and the cocktails will lay you down.
+div[class="w-gallery layout_tile size_m"]
+	div[class="w-gallery-h"]
+		div[class="w-gallery-tnails"]
+			div[class="w-gallery-tnails-h"]
+				a[class="w-gallery-tnail order_1" title="Hot Dougs" href="#{image_path('posts/RailsConference2014food1.jpg')}"]
+					span[class="w-gallery-tnail-h"]
+						= post_image("RailsConference2014food1.jpg")
+						span[class="w-gallery-tnail-title"]
+
+
+				a[class="w-gallery-tnail order_2" title="Portillos" href="#{image_path('posts/RailsConference2014food2.jpg')}"]
+					span[class="w-gallery-tnail-h"]
+						= post_image("RailsConference2014food2.jpg")
+						span[class="w-gallery-tnail-title"]
+
+
+				a[class="w-gallery-tnail order_3" title="Kumas Corner" href="#{image_path('posts/RailsConference2014food3.jpg')}"]
+					span[class="w-gallery-tnail-h"]
+						= post_image("RailsConference2014food3.jpg")
+						span[class="w-gallery-tnail-title"]
+
+
+				a[class="w-gallery-tnail order_4" title="Portillos" href="#{image_path('posts/RailsConference2014food4.jpg')}"]
+					span[class="w-gallery-tnail-h"]
+						= post_image("RailsConference2014food4.jpg")
+						span[class="w-gallery-tnail-title"]
+
+
+				a[class="w-gallery-tnail order_5" title="Uncle Julios" href="#{image_path('posts/RailsConference2014food5.jpg')}"]
+					span[class="w-gallery-tnail-h"]
+						= post_image("RailsConference2014food5.jpg")
+						span[class="w-gallery-tnail-title"]
+
+
+				a[class="w-gallery-tnail order_5" title="Ginos East" href="#{image_path('posts/RailsConference2014food6.jpg')}"]
+					span[class="w-gallery-tnail-h"]
+						= post_image("RailsConference2014food6.jpg")
+						span[class="w-gallery-tnail-title"]
+
+
+				a[class="w-gallery-tnail order_7" title="John and Mary Hough : My Parents" href="#{image_path('posts/RailsConference2014family1.jpg')}"]
+					span[class="w-gallery-tnail-h"]
+						= post_image("RailsConference2014family1.jpg")
+						span[class="w-gallery-tnail-title"]
+
+
+				a[class="w-gallery-tnail order_8" title="Frat brother and rocker Ra" href="#{image_path('posts/RailsConference2014family2.jpg')}"]
+					span[class="w-gallery-tnail-h"]
+						= post_image("RailsConference2014family2.jpg")
+						span[class="w-gallery-tnail-title"]
+
+
+				a[class="w-gallery-tnail order_9" title="College roommate and fellow rubyist Tim Tyrrell" href="#{image_path('posts/RailsConference2014family3.jpg')}"]
+					span[class="w-gallery-tnail-h"]
+						= post_image("RailsConference2014family3.jpg")
+						span[class="w-gallery-tnail-title"]
