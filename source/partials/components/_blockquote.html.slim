@@ -2,11 +2,12 @@ blockquote
   p
     = locals[:quote]
 
-  footer
-    strong
-      = locals[:author]
+  - if locals[:author]
+    footer
+      strong
+        = locals[:author]
 
-    - if locals[:source]
-      cite
-        a[href="#{locals[:source_link]}"]
-          = locals[:source]
+      - if locals[:source]
+        cite
+          a[href="#{locals[:source_link]}"]
+            = locals[:source]
