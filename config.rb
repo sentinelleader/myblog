@@ -1,6 +1,7 @@
 require "lib/helpers/menu_helpers"
 require "lib/helpers/view_helpers"
 require "lib/helpers/site_helpers"
+require 'builder'
 require 'slim'
 
 Slim::Engine.disable_option_validator!
@@ -28,6 +29,9 @@ activate :deploy do |deploy|
   deploy.method       = :git
   deploy.branch       = 'gh-pages'
 end
+
+page "/feed.xml", :layout => false
+page "/sitemap.xml", :layout => false
 
 activate :blog do |b|
   b.sources = "posts/{year}{month}{day}-{title}.html"
@@ -65,6 +69,7 @@ Time.zone = "Pacific Time (US & Canada)"
 
 # Globla Variables
 set :site_title, 'NoConformity'
+set :site_url, 'http://noconformity.com'
 set :site_author, 'Chris Hough'
 set :site_description, 'This is the personal blog of Chris Hough. My thoughts and feelings are my own! If you have opinions for my opinions reach out to me, but make sure you read my disclaimer first.'
 set :site_slogan, 'A free spirited, sex positive, polish internet brick laying capitalist.'
