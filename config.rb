@@ -75,6 +75,7 @@ set :site_owner_email, 'chris@noconformity.com'
 set :site_owner_twitter, 'chrishough'
 set :site_owner_instagram, 'chrishough'
 set :site_owner_github, 'chrishough'
+set :site_owner_amazon_affiliate_id, 'noconf-20'
 set :site_owner_configurations, 'https://github.com/chrishough/myconfigurations'
 set :site_owner_cv, 'https://github.com/chrishough/myblog/tree/master/data/resume'
 

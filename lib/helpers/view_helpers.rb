@@ -16,6 +16,10 @@ module ViewHelpers
     image_tag("posts/#{img}")
   end
 
+  def post_amazon(title,aid)
+    link_to(title, "http://www.amazon.com/dp/#{aid}/?tag=#{site_owner_amazon_affiliate_id}", target: "_blank")
+  end
+
   def post_vimeo(id)
     %(<iframe
       width="500"
