@@ -29,6 +29,7 @@ GEM
     eventmachine (1.0.3)
     execjs (2.2.1)
     exifr (1.1.3)
+    fast-stemmer (1.0.2)
     ffi (1.9.3)
     font-awesome-middleman (4.1.1)
       middleman-core (>= 3.0.0)
@@ -53,6 +54,8 @@ GEM
     in_threads (1.2.1)
     json (1.8.1)
     kramdown (1.4.0)
+    levenshtein-ffi (1.1.0)
+      ffi (~> 1.9)
     listen (1.3.1)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -73,6 +76,10 @@ GEM
       addressable (~> 2.3.5)
       middleman-core (~> 3.2)
       tzinfo (>= 0.3.0)
+    middleman-blog-similar (1.1.1)
+      fast-stemmer (~> 1.0.2)
+      middleman-blog (~> 3.5)
+      middleman-core (~> 3.2)
     middleman-core (3.3.3)
       activesupport (~> 4.1.0)
       bundler (~> 1.1)
@@ -173,8 +180,10 @@ DEPENDENCIES
   builder
   font-awesome-middleman
   highline
+  levenshtein-ffi
   middleman (~> 3.3.3)
   middleman-blog
+  middleman-blog-similar
   middleman-deploy
   middleman-imageoptim (~> 0.1.4)
   middleman-livereload (~> 3.1.0)

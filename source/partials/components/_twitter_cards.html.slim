@@ -1,0 +1,7 @@
+- if current_article
+  meta[name="twitter:card" content="summary"]
+  meta[property="twitter:creator" content="@#{site_owner_twitter}"]
+  meta[name="twitter:title" content="#{truncate(current_article.title, length: 70)}"]
+  meta[name="twitter:image" content="#{site_url}/assets/images/posts_500x500/#{current_article.metadata[:page]['image_thumbnail_500x500']}"]
+  meta[name="twitter:description" content="#{truncate(strip_tags(current_article.summary), length: 200)}"]
+  meta[name="twitter:domain" content="#{site_url}/#{current_article.url}"]

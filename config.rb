@@ -16,9 +16,7 @@ set :css_dir, 'assets/stylesheets'
 set :fonts_dir, 'assets/fonts'
 set :layouts_dir, 'layouts'
 set :partials_dir, 'partials'
-# set :data_dir
-# set :helpers_dir
-# activate :relative_assets
+activate :similar
 
 configure :development do
   activate :livereload, apply_js_live: false

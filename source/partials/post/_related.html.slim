@@ -1,0 +1,12 @@
+div[class="w-bloglist"]
+  h4[class="w-bloglist-title"]
+    |Related Posts
+  div[class="w-bloglist-list"]
+    - similar_articles.first(5).each do |article|
+      div[class="w-bloglist-entry"]
+        a[class="w-bloglist-entry-link" href="#{article.url}"]
+          = article.title
+        span[class="w-bloglist-entry-date"]
+          i[class="fa fa-clock-o"]
+          |&nbsp;
+          = post_date(article)
