@@ -20,6 +20,17 @@ module ViewHelpers
     link_to(title, "http://www.amazon.com/dp/#{aid}/?tag=#{site_owner_amazon_affiliate_id}", target: "_blank")
   end
 
+  def post_gist(id, datafile = nil)
+    gist = '<code id="gist-' + id + '"'
+
+    if datafile
+      gist = gist + 'data-file="' + datafile + '"'
+    end
+
+    gist = gist + '></code>'
+    %(#{gist})
+  end
+
   def post_youtube(videoid, caption = "")
     intrinsic = ((360.to_f / 480.to_f) * 100)
     padding_bottom = ("%.2f" % intrinsic).to_s  + "%"

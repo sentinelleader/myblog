@@ -14,7 +14,7 @@
 //= require theme/waypoints.min
 //= require theme/us.widgets
 //= require theme/jquery.lazyyoutube
-
+//= require plugins/gist-embed
 
 $(function() {
 
