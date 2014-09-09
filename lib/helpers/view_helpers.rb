@@ -20,6 +20,13 @@ module ViewHelpers
     link_to(title, "http://www.amazon.com/dp/#{aid}/?tag=#{site_owner_amazon_affiliate_id}", target: "_blank")
   end
 
+  def post_youtube(videoid, caption = "")
+    intrinsic = ((360.to_f / 480.to_f) * 100)
+    padding_bottom = ("%.2f" % intrinsic).to_s  + "%"
+    video = %Q{<a class="youtube" href="http://www.youtube.com/watch?v=#{videoid}" data-videoid="#{videoid}" data-width="480" data-height="360">YouTube Video</a>}
+    %Q{<figure class="bt-video-container" style="padding-bottom:#{padding_bottom}">#{video}#{caption}</figure>}
+  end
+
   def post_vimeo(id)
     %(<iframe
       width="500"

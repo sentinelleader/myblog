@@ -34,9 +34,9 @@ module Jekyll
         %Q{<figure class="bt-video-container" style="padding-bottom:#{padding_bottom}">#{video}#{@caption}</figure>}
       else
         "Error processing input, expected syntax: {% youtube video_id [width height] %}"
-      end
+      # end
     end
   end
 end
 
-Liquid::Template.register_tag('youtube', Jekyll::YouTubeTag)
+Liquid::Template.register_tag('youtube', Jekyll::YouTuTRESTbeTag)
