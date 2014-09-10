@@ -30,6 +30,7 @@ end
 
 page "/feed.xml", :layout => false
 page "/sitemap.xml", :layout => false
+page "/pages/*", :layout => "layout-page"
 
 activate :blog do |b|
   b.sources = "posts/{year}{month}{day}-{title}.html"
