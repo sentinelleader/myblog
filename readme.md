@@ -2,6 +2,8 @@
 ----
 Twitter is best way to reach me: [@chrishough](http://twitter.com/chrishough)
 
+Looking for my CV? [Click Here!](https://github.com/chrishough/myblog/tree/master/data/resume)
+
 **Disclaimer**
 
 This is a personal website and blog. That fact means nothing. This is not a peer-reviewed journal, a final archive of my writing, a sponsored publication, or
