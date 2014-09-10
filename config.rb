@@ -16,7 +16,10 @@ set :css_dir, 'assets/stylesheets'
 set :fonts_dir, 'assets/fonts'
 set :layouts_dir, 'layouts'
 set :partials_dir, 'partials'
+
 activate :similar
+
+Time.zone = "Pacific Time (US & Canada)"
 
 configure :development do
   activate :livereload, apply_js_live: false
@@ -60,13 +63,11 @@ configure :build do
   # end
 end
 
-after_build do
-  # FileUtils.rm_rf ["build/partials"]
-end
+# after_build do
+#   FileUtils.rm_rf ["build/partials"]
+# end
 
-Time.zone = "Pacific Time (US & Canada)"
-
-# Globla Variables
+# Global
 set :site_title, 'NoConformity'
 set :site_url, 'http://noconformity.com'
 set :site_author, 'Chris Hough'
