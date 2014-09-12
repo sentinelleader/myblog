@@ -2,10 +2,10 @@ div[class="widget"]
   h4
   | Recent Posts
   div[class="w-bloglist date_atbottom"]
-    - blog.articles[0...3].each do |article|
+    - blog.articles[0...5].each do |article|
       div[class="w-bloglist-entry"]
         a[class="w-bloglist-entry-link" href="#{article.url}"]
-          = article.title.titlecase
+          = article.title.titlecase_words
         span[class="w-bloglist-entry-date"]
           i[class="fa fa-clock-o"]
           |&nbsp;

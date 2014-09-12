@@ -1,3 +1,10 @@
+class String
+  def titlecase_words
+    self.split(" ").collect{|word| word[0] = word[0].upcase; word}.join(" ")
+  end
+end
+
+
 module ViewHelpers
 
   def latest_post_url
