@@ -1,5 +1,5 @@
 - if current_article.metadata[:page]['category']
   div[class="w-blogpost-meta-tags"]
     i[class="fa fa-folder-open"]
-    a[class="w-tags-item-link force-capitalize" href="/"]
+    a[class="w-tags-item-link force-capitalize" href="#{category_path(current_article.metadata[:page]['category'])}"]
       = current_article.metadata[:page]['category']

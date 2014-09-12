@@ -7,7 +7,7 @@
       div[class="w-tags-list"]
         - current_article.tags.each do | tag |
           div[class="w-tags-item"]
-            a[class="w-tags-item-link force-capitalize" href="/"]
+            a[class="w-tags-item-link force-capitalize" href="#{tag_path(tag)}"]
               = tag
             span[class="w-tags-item-separator"]
               |,
