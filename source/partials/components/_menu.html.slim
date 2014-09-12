@@ -92,5 +92,9 @@ nav[class="w-nav layout_hor"]
             = build_menu_item("Artwork")
 
         li[class="w-nav-item level_2 "]
+          a[class="w-nav-anchor level_2" href="#{tag_path('recipes')}"]
+            = build_menu_item("Recipes")
+
+        li[class="w-nav-item level_2 "]
           a[class="w-nav-anchor level_2" href="#{tag_path('rants')}"]
             = build_menu_item("Rants")
