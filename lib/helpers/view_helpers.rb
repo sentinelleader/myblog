@@ -19,6 +19,12 @@ module ViewHelpers
     article.body.split(/<!--more-->/).first
   end
 
+  def post_url(article_title)
+    blog.articles.find { |article| article.title.downcase == article_title.downcase }.url
+    rescue
+    ""
+  end
+
   def post_image(img)
     image_tag("posts/#{img}")
   end
