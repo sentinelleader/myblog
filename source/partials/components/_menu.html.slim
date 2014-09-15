@@ -38,10 +38,6 @@ nav[class="w-nav layout_hor"]
         /       = build_menu_item("Projects")
 
         li[class="w-nav-item level_2 "]
-          a[class="w-nav-anchor level_2" href="#{site_owner_cv}" target="_blank"]
-            = build_menu_item("Resume")
-
-        li[class="w-nav-item level_2 "]
           - if current_page.data.theme == "home"
             a[class="w-nav-anchor level_2" href="javascript: scroll_to('contact');" target="_blank"]
               = build_menu_item("Contact")
@@ -71,6 +67,10 @@ nav[class="w-nav layout_hor"]
         li[class="w-nav-item level_2 "]
           a[class="w-nav-anchor level_2" href="#{site_owner_configurations}" target="_blank"]
             = build_menu_item("My Configurations")
+
+        li[class="w-nav-item level_2 "]
+          a[class="w-nav-anchor level_2" href="#{site_owner_cv}" target="_blank"]
+            = build_menu_item("My Resume")
 
         li[class="w-nav-item level_2 "]
           a[class="w-nav-anchor level_2" href="/pages/oss.html"]
