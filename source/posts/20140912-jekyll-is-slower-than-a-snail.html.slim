@@ -1,0 +1,22 @@
+---
+date: 2014-09-12 13:31 PDT
+title: Jekyll Is Slower Than A Snail
+description: Jekyll Is Slower Than A Snail
+image_thumbnail_500x320: Middleman320.jpg
+image_thumbnail_500x500: Middleman500.jpg
+category: code
+tags: ruby, static-site-generators, wordpress-is-dead
+---
+p
+  |It has been awhile since my last post, but I am happy to report I’m finally back.  Both the day gig and night gig have been keeping me extremely busy, and on top of that I was mining out time to convert my blog to Middleman.  So why did I convert? Ultimately Jekyll is not only a bit inflexible, it is beyond slow.  Let me say that again, IT IS BEYOND SLOW.
+
+/! more
+
+p
+  = post_image("JekyllToMiddleman.jpg")
+
+p
+  |I've built many websites utilizing Jekyll and all of them started to crawl during generation after 20 posts were in the system.  I took some time to research what other web geeks  were saying on this issue to see if any solutions have been proposed. Everywhere I researched, I found the same complaints. It just starts slowing down and there is nothing you could do to speed it up. Not only is the engine incapable of regenerating differential changes, but the limited development versus production modes make it hard to get around.  Also, the LSI post indexer, which attempts to compile related posts, makes things even worse. Today, there are a ton of newer #{link_to("static site generators", "http://staticsitegenerators.net/", target: "_blank")} on the market to choose from. Being a rubyist, I wanted to stick with the language I’m working in on a regular basis. I have decided to try Middleman as a replacement. So what is different?
+
+p
+  |At the jump there are a few drastically different things in Middleman compared to Jekyll.  Middleman is  extremely flexible, but you are on your own to build various plugins you may need.  Middleman is not only for blogs but can be used to generate all sorts of static site needs such as single page javascript applications [Note: This was covered at #{link_to("Rails Conference 2014",post_url("Rails Conference 2014"))} this year via "#{link_to("Middleman: The missing front end of the Rails API stack by Brad Gessler", "http://www.confreaks.com/videos/3341-railsconf-middleman-the-missing-view-in-the-rails-api-stack", target: "_blank")}"].  To get around the plug in issue you can simply create your own sets of ruby methods that can be accessed throughout your views. Pretty straight forward right? I created methods for post images, amazon links, and even extended the string class to adjust titlecase to work with words like “Car2Go.” You can see #{link_to("them here", "https://github.com/chrishough/myblog/tree/master/lib/helpers", target: "_blank")}. If you have experience with rails you will see how easy it is to utilitize multiple layouts, the asset pipeline, and even pry during development. When I started using Jekyll, the goal was to kill wordpress.  While it was successful in doing that, the slowness and inflexibility drove me mad over a period of time. <strong>I can honestly say that Jekyll was preventing me from writing</strong>.  At the end of the day if you are considering generators (which I would recommend) for your blog or editorial components of your business, check out Middleman.  It may take you a bit longer to get up and running, but in the long run you will find it easier to work in, It generates quickly during development, and will feel more native if you are used to rails.  If you need help getting things running, feel free to ping me on twitter.  Check out the various methods I have added #{link_to("in my blog repo", "https://github.com/chrishough/myblog/tree/master/lib/helpers", target: "_blank")}, and I highly recommend you use this #{link_to("blog article", "https://github.com/ngs/middleman-blog-similar", target: "_blank")} for a replacement to Jekyll’s LSI.
