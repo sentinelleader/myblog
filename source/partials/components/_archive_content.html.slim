@@ -4,9 +4,9 @@ div[class="w-blog-entry format-standard"]
     a[class="w-blog-entry-link" href="#{article.url}"]
       span[class="w-blog-entry-preview"]
         - if article.metadata[:page]['image_thumbnail_500x500']
-          = image_tag("posts_500x500/#{article.metadata[:page]['image_thumbnail_500x500']}")
+          = image_tag image_url("posts_500x500/#{article.metadata[:page]['image_thumbnail_500x500']}")
         - else
-          = image_tag("placeholder/500x500.gif")
+          = image_tag image_url("placeholder/500x500.gif")
 
     h3[class="w-blog-entry-title"]
       span[class="w-blog-entry-title-h"]

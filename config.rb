@@ -16,6 +16,7 @@ set :css_dir, 'assets/stylesheets'
 set :fonts_dir, 'assets/fonts'
 set :layouts_dir, 'layouts'
 set :partials_dir, 'partials'
+set :relative_links, false
 
 activate :similar
 
@@ -61,6 +62,14 @@ configure :build do
   activate :imageoptim do |image_optim|
     image_optim.pngout_options = false # Should disable pngout
   end
+end
+
+set :protocol, "http://"
+set :host, "noconformity.com"
+
+configure :development do
+  set :host, "localhost"
+  set :port, 4567
 end
 
 # after_build do
