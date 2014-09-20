@@ -66,7 +66,7 @@ end
 
 set :protocol, "http://"
 set :host, "noconformity.com"
-
+set :port, 80
 configure :development do
   set :host, "localhost"
   set :port, 4567
