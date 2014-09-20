@@ -64,14 +64,6 @@ configure :build do
   end
 end
 
-set :protocol, "http://"
-set :host, "noconformity.com"
-set :port, 80
-configure :development do
-  set :host, "localhost"
-  set :port, 4567
-end
-
 # after_build do
 #   FileUtils.rm_rf ["build/partials"]
 # end

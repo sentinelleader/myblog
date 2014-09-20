@@ -26,7 +26,7 @@ module ViewHelpers
   end
 
   def post_image(img)
-    image_tag image_url("posts/#{img}")
+    image_tag("posts/#{img}")
   end
 
   def post_amazon(title,aid)
