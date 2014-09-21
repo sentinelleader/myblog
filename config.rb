@@ -58,6 +58,7 @@ configure :build do
   activate :minify_javascript
   activate :minify_html
   activate :asset_hash
+  # activate :relative_assets
   activate :gzip
   activate :imageoptim do |image_optim|
     image_optim.pngout_options = false # Should disable pngout
