@@ -16,7 +16,7 @@ set :css_dir, 'assets/stylesheets'
 set :fonts_dir, 'assets/fonts'
 set :layouts_dir, 'layouts'
 set :partials_dir, 'partials'
-set :relative_links, false
+# set :relative_links, false
 
 activate :similar
 
