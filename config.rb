@@ -74,7 +74,7 @@ set :site_title, 'NoConformity'
 set :site_url, 'http://noconformity.com'
 set :site_author, 'Chris Hough'
 set :site_description, 'This is the personal blog of Chris Hough. My thoughts and feelings are my own! If you have opinions for my opinions reach out to me, but make sure you read my disclaimer first.'
-set :site_slogan, 'A free spirited, sex positive, polish internet brick laying capitalist.'
+set :site_slogan, 'A free spirited, sex positive, polish internet brick laying capitalist. #Atheist'
 
 set :site_owner_name, 'Chris Hough'
 set :site_owner_author, 'Chris Hough'
